@@ -1,0 +1,44 @@
+# Visual Studio / .NET
+.vs/
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.pdb
+*.dll
+*.exe
+
+# Build / packages
+packages/
+TestResults/
+artifacts/
+
+# OS / editors
+Thumbs.db
+.DS_Store
+*.swp
+
+# Secrets / local environment
+.env
+.env.*
+!.env.example
+*.key
+*.pfx
+*.pem
+
+# Proprietary/catalog/project data
+*.pcat
+*.pspc
+*.pspx
+Catalogo_E3D_Export_*.zip
+arq*.zip
+**/Evidencias_E3D/
+**/CatalogEvidence/
+
+# Local reports/logs
+*.log
+*.tmp
+runtime/
+reports/

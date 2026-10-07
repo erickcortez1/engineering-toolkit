@@ -1,0 +1,4684 @@
+﻿{
+    "schemaVersion": "2.0",
+    "generator": {
+        "name": "pcftoe3d5",
+        "phase": "catalog-normalization",
+        "catalogResolution": "deferred-to-e3d",
+        "payloadPolicy": "one-payload-per-pipeline-reference"
+    },
+    "source": {
+        "pipelineReference": "0001",
+        "pcfLineBase": 1,
+        "header": {
+            "PIPELINE-REFERENCE": "0001",
+            "UNITS-CO-ORDS": "MM",
+            "UNITS-BORE": "INCH",
+            "UNITS-WEIGHT": "KGS",
+            "UNITS-BOLT-DIA": "INCH",
+            "UNITS-BOLT-LENGTH": "MM",
+            "ISOGEN-FILES": "ISOCONFIG.FLS",
+            "DATE-DMY": "07/27/19",
+            "ATTRIBUTE1": "",
+            "ATTRIBUTE2": "",
+            "ATTRIBUTE3": "",
+            "ATTRIBUTE4": "",
+            "ATTRIBUTE5": "",
+            "ATTRIBUTE6": "",
+            "ATTRIBUTE7": "0001",
+            "ATTRIBUTE8": "TESTEPCF",
+            "ATTRIBUTE9": "TESTEPCF",
+            "PROJECT-IDENTIFIER": "",
+            "REVISION": "0",
+            "AREA": "",
+            "PIPING-SPEC": "SIS",
+            "INSULATION-SPEC": "",
+            "TRACING-SPEC": ""
+        },
+        "units": {
+            "coordinates": "MM",
+            "bore": "INCH",
+            "weight": "KGS"
+        },
+        "externalConnections": []
+    },
+    "components": [
+        {
+            "id": "37",
+            "branchId": "4",
+            "source": {
+                "pcfLine": 38,
+                "pipelineReference": "0001",
+                "type": "PIPE",
+                "itemCode": "PA50",
+                "itemDescription": "PIPE, SEAMLESS, 40, PE, ASTM A106",
+                "pipingSpec": "SIS",
+                "skey": "",
+                "tag": "",
+                "rawAttributes": {
+                    "END-POINT": [
+                        "-1322.5193    -441.2823    963.2699    2.0000",
+                        "-1322.5193    -872.1543    963.2699    2.0000"
+                    ],
+                    "ITEM-CODE": "PA50",
+                    "ITEM-DESCRIPTION": "PIPE, SEAMLESS, 40, PE, ASTM A106",
+                    "FABRICATION-ITEM": true,
+                    "PIPING-SPEC": "SIS",
+                    "TRACING-SPEC": true,
+                    "COMPONENT-ATTRIBUTE1": "BOMCOLUMN_Material_",
+                    "COMPONENT-ATTRIBUTE2": "BOMCOLUMN_SCHClass_40",
+                    "WEIGHT": "5.44666969064683"
+                }
+            },
+            "engineering": {
+                "angleDegrees": null,
+                "boreProfile": {
+                    "endPoints": [
+                        2,
+                        2
+                    ],
+                    "branchPoints": [],
+                    "unique": [
+                        2
+                    ]
+                },
+                "connectionTypes": [],
+                "classCode": "40",
+                "scheduleHint": "40",
+                "pressureClassHint": null,
+                "isReducing": false,
+                "isBranching": false
+            },
+            "geometry": {
+                "endPoints": [
+                    {
+                        "index": 0,
+                        "role": "end-point",
+                        "x": -1322.5193,
+                        "y": -441.2823,
+                        "z": 963.2699,
+                        "bore": 2,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": "132",
+                            "connectedEndpoint": 1,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    },
+                    {
+                        "index": 1,
+                        "role": "end-point",
+                        "x": -1322.5193,
+                        "y": -872.1543,
+                        "z": 963.2699,
+                        "bore": 2,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": null,
+                            "connectedEndpoint": null,
+                            "extremity": "T",
+                            "connectionRole": "TAIL",
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "centrePoint": null,
+                "branchPoints": [],
+                "auxiliaryPoints": []
+            },
+            "catalogResolution": {
+                "status": "unresolved",
+                "strategy": "e3d-catalog-resolver",
+                "legacyCandidateSpref": "/SIS/PA50",
+                "resolvedSpref": null,
+                "resolvedBy": null
+            }
+        },
+        {
+            "id": "57",
+            "branchId": "5",
+            "source": {
+                "pcfLine": 58,
+                "pipelineReference": "0001",
+                "type": "OLET",
+                "itemCode": "SKL50X15",
+                "itemDescription": "SOCKOLET, 3000 LB, BWXSW,  LG, MSS SP-97",
+                "pipingSpec": "SIS",
+                "skey": "SKSW",
+                "tag": "",
+                "rawAttributes": {
+                    "CENTRE-POINT": "-1322.5193    -624.7927    963.2699",
+                    "BRANCH1-POINT": "-1322.5193    -624.7927    1009.4344    0.5000  SW",
+                    "SKEY": "SKSW",
+                    "ITEM-CODE": "SKL50X15",
+                    "ITEM-DESCRIPTION": "SOCKOLET, 3000 LB, BWXSW,  LG, MSS SP-97",
+                    "FABRICATION-ITEM": true,
+                    "PIPING-SPEC": "SIS",
+                    "TRACING-SPEC": true,
+                    "COMPONENT-ATTRIBUTE1": "BOMCOLUMN_Material_",
+                    "COMPONENT-ATTRIBUTE2": "BOMCOLUMN_SCHClass_3000",
+                    "WEIGHT": "0.0498956726843872"
+                }
+            },
+            "engineering": {
+                "angleDegrees": null,
+                "boreProfile": {
+                    "endPoints": [
+                        0.5
+                    ],
+                    "branchPoints": [
+                        0.5
+                    ],
+                    "unique": [
+                        0.5
+                    ]
+                },
+                "connectionTypes": [
+                    "SW"
+                ],
+                "classCode": "3000",
+                "scheduleHint": null,
+                "pressureClassHint": 3000,
+                "isReducing": false,
+                "isBranching": true
+            },
+            "geometry": {
+                "endPoints": [
+                    {
+                        "index": 0,
+                        "role": "end-point",
+                        "x": -1322.5193,
+                        "y": -624.7927,
+                        "z": 1009.4344,
+                        "bore": 0.5,
+                        "connectionType": "SW",
+                        "topology": {
+                            "connectedComponentId": "78",
+                            "connectedEndpoint": 0,
+                            "extremity": "H",
+                            "connectionRole": "HEAD",
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "centrePoint": {
+                    "x": -1322.5193,
+                    "y": -624.7927,
+                    "z": 963.2699
+                },
+                "branchPoints": [
+                    {
+                        "index": 0,
+                        "role": "BRANCH1-POINT",
+                        "x": -1322.5193,
+                        "y": -624.7927,
+                        "z": 1009.4344,
+                        "bore": 0.5,
+                        "connectionType": "SW",
+                        "topology": {
+                            "connectedComponentId": null,
+                            "connectedEndpoint": null,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "auxiliaryPoints": []
+            },
+            "catalogResolution": {
+                "status": "unresolved",
+                "strategy": "e3d-catalog-resolver",
+                "legacyCandidateSpref": "/SIS/SKL50X15",
+                "resolvedSpref": null,
+                "resolvedBy": null
+            }
+        },
+        {
+            "id": "78",
+            "branchId": "5",
+            "source": {
+                "pcfLine": 79,
+                "pipelineReference": "0001",
+                "type": "PIPE",
+                "itemCode": "PA15",
+                "itemDescription": "PIPE, SEAMLESS, 80, PE, ASTM A106",
+                "pipingSpec": "SIS",
+                "skey": "",
+                "tag": "",
+                "rawAttributes": {
+                    "END-POINT": [
+                        "-1322.5193    -624.7927    1009.4344    0.5000",
+                        "-1322.5193    -624.7927    1312.0922    0.5000"
+                    ],
+                    "ITEM-CODE": "PA15",
+                    "ITEM-DESCRIPTION": "PIPE, SEAMLESS, 80, PE, ASTM A106",
+                    "FABRICATION-ITEM": true,
+                    "PIPING-SPEC": "SIS",
+                    "TRACING-SPEC": true,
+                    "COMPONENT-ATTRIBUTE1": "BOMCOLUMN_Material_",
+                    "COMPONENT-ATTRIBUTE2": "BOMCOLUMN_SCHClass_80",
+                    "WEIGHT": "1.62209561825274"
+                }
+            },
+            "engineering": {
+                "angleDegrees": null,
+                "boreProfile": {
+                    "endPoints": [
+                        0.5,
+                        0.5
+                    ],
+                    "branchPoints": [],
+                    "unique": [
+                        0.5
+                    ]
+                },
+                "connectionTypes": [],
+                "classCode": "80",
+                "scheduleHint": "80",
+                "pressureClassHint": null,
+                "isReducing": false,
+                "isBranching": false
+            },
+            "geometry": {
+                "endPoints": [
+                    {
+                        "index": 0,
+                        "role": "end-point",
+                        "x": -1322.5193,
+                        "y": -624.7927,
+                        "z": 1009.4344,
+                        "bore": 0.5,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": "57",
+                            "connectedEndpoint": 0,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    },
+                    {
+                        "index": 1,
+                        "role": "end-point",
+                        "x": -1322.5193,
+                        "y": -624.7927,
+                        "z": 1312.0922,
+                        "bore": 0.5,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": "98",
+                            "connectedEndpoint": 0,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "centrePoint": null,
+                "branchPoints": [],
+                "auxiliaryPoints": []
+            },
+            "catalogResolution": {
+                "status": "unresolved",
+                "strategy": "e3d-catalog-resolver",
+                "legacyCandidateSpref": "/SIS/PA15",
+                "resolvedSpref": null,
+                "resolvedBy": null
+            }
+        },
+        {
+            "id": "98",
+            "branchId": "5",
+            "source": {
+                "pcfLine": 99,
+                "pipelineReference": "0001",
+                "type": "ELBOW",
+                "itemCode": "EB15",
+                "itemDescription": "ELL 90, 3000 LB, SW, ASME B16.11",
+                "pipingSpec": "SIS",
+                "skey": "ELSW",
+                "tag": "",
+                "rawAttributes": {
+                    "END-POINT": [
+                        "-1322.5193    -624.7927    1312.0922    0.5000  SW",
+                        "-1322.5193    -609.0447    1327.8402    0.5000  SW"
+                    ],
+                    "CENTRE-POINT": "-1322.5193    -624.7927    1327.8402",
+                    "SKEY": "ELSW",
+                    "ITEM-CODE": "EB15",
+                    "ITEM-DESCRIPTION": "ELL 90, 3000 LB, SW, ASME B16.11",
+                    "FABRICATION-ITEM": true,
+                    "ANGLE": "9000",
+                    "PIPING-SPEC": "SIS",
+                    "TRACING-SPEC": true,
+                    "COMPONENT-ATTRIBUTE1": "BOMCOLUMN_Material_",
+                    "COMPONENT-ATTRIBUTE2": "BOMCOLUMN_SCHClass_3000",
+                    "WEIGHT": "0.22679851220176"
+                }
+            },
+            "engineering": {
+                "angleDegrees": 90,
+                "boreProfile": {
+                    "endPoints": [
+                        0.5,
+                        0.5
+                    ],
+                    "branchPoints": [],
+                    "unique": [
+                        0.5
+                    ]
+                },
+                "connectionTypes": [
+                    "SW"
+                ],
+                "classCode": "3000",
+                "scheduleHint": null,
+                "pressureClassHint": 3000,
+                "isReducing": false,
+                "isBranching": false
+            },
+            "geometry": {
+                "endPoints": [
+                    {
+                        "index": 0,
+                        "role": "end-point",
+                        "x": -1322.5193,
+                        "y": -624.7927,
+                        "z": 1312.0922,
+                        "bore": 0.5,
+                        "connectionType": "SW",
+                        "topology": {
+                            "connectedComponentId": "78",
+                            "connectedEndpoint": 1,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    },
+                    {
+                        "index": 1,
+                        "role": "end-point",
+                        "x": -1322.5193,
+                        "y": -609.0447,
+                        "z": 1327.8402,
+                        "bore": 0.5,
+                        "connectionType": "SW",
+                        "topology": {
+                            "connectedComponentId": "121",
+                            "connectedEndpoint": 0,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "centrePoint": {
+                    "x": -1322.5193,
+                    "y": -624.7927,
+                    "z": 1327.8402
+                },
+                "branchPoints": [],
+                "auxiliaryPoints": []
+            },
+            "catalogResolution": {
+                "status": "unresolved",
+                "strategy": "e3d-catalog-resolver",
+                "legacyCandidateSpref": "/SIS/EB15",
+                "resolvedSpref": null,
+                "resolvedBy": null
+            }
+        },
+        {
+            "id": "121",
+            "branchId": "5",
+            "source": {
+                "pcfLine": 122,
+                "pipelineReference": "0001",
+                "type": "PIPE",
+                "itemCode": "PA15",
+                "itemDescription": "PIPE, SEAMLESS, 80, PE, ASTM A106",
+                "pipingSpec": "SIS",
+                "skey": "",
+                "tag": "",
+                "rawAttributes": {
+                    "END-POINT": [
+                        "-1322.5193    -609.0447    1327.8402    0.5000",
+                        "-1322.5193    -345.2311    1327.8402    0.5000"
+                    ],
+                    "ITEM-CODE": "PA15",
+                    "ITEM-DESCRIPTION": "PIPE, SEAMLESS, 80, PE, ASTM A106",
+                    "FABRICATION-ITEM": true,
+                    "PIPING-SPEC": "SIS",
+                    "TRACING-SPEC": true,
+                    "COMPONENT-ATTRIBUTE1": "BOMCOLUMN_Material_",
+                    "COMPONENT-ATTRIBUTE2": "BOMCOLUMN_SCHClass_80",
+                    "WEIGHT": "1.62209561825274"
+                }
+            },
+            "engineering": {
+                "angleDegrees": null,
+                "boreProfile": {
+                    "endPoints": [
+                        0.5,
+                        0.5
+                    ],
+                    "branchPoints": [],
+                    "unique": [
+                        0.5
+                    ]
+                },
+                "connectionTypes": [],
+                "classCode": "80",
+                "scheduleHint": "80",
+                "pressureClassHint": null,
+                "isReducing": false,
+                "isBranching": false
+            },
+            "geometry": {
+                "endPoints": [
+                    {
+                        "index": 0,
+                        "role": "end-point",
+                        "x": -1322.5193,
+                        "y": -609.0447,
+                        "z": 1327.8402,
+                        "bore": 0.5,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": "98",
+                            "connectedEndpoint": 1,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    },
+                    {
+                        "index": 1,
+                        "role": "end-point",
+                        "x": -1322.5193,
+                        "y": -345.2311,
+                        "z": 1327.8402,
+                        "bore": 0.5,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": "164",
+                            "connectedEndpoint": 0,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "centrePoint": null,
+                "branchPoints": [],
+                "auxiliaryPoints": []
+            },
+            "catalogResolution": {
+                "status": "unresolved",
+                "strategy": "e3d-catalog-resolver",
+                "legacyCandidateSpref": "/SIS/PA15",
+                "resolvedSpref": null,
+                "resolvedBy": null
+            }
+        },
+        {
+            "id": "132",
+            "branchId": "4",
+            "source": {
+                "pcfLine": 133,
+                "pipelineReference": "0001",
+                "type": "ELBOW",
+                "itemCode": "EA50",
+                "itemDescription": "ELL 90 SR, BW, ASME B16.9",
+                "pipingSpec": "SIS",
+                "skey": "ELBW",
+                "tag": "",
+                "rawAttributes": {
+                    "END-POINT": [
+                        "-1271.7193    -390.4823    963.2699    2.0000  BW",
+                        "-1322.5193    -441.2823    963.2699    2.0000  BW"
+                    ],
+                    "CENTRE-POINT": "-1322.5193    -390.4823    963.2699",
+                    "SKEY": "ELBW",
+                    "ITEM-CODE": "EA50",
+                    "ITEM-DESCRIPTION": "ELL 90 SR, BW, ASME B16.9",
+                    "FABRICATION-ITEM": true,
+                    "ANGLE": "9000",
+                    "PIPING-SPEC": "SIS",
+                    "TRACING-SPEC": true,
+                    "COMPONENT-ATTRIBUTE1": "BOMCOLUMN_Material_",
+                    "COMPONENT-ATTRIBUTE2": "BOMCOLUMN_SCHClass_",
+                    "WEIGHT": "0.45359702440352"
+                }
+            },
+            "engineering": {
+                "angleDegrees": 90,
+                "boreProfile": {
+                    "endPoints": [
+                        2,
+                        2
+                    ],
+                    "branchPoints": [],
+                    "unique": [
+                        2
+                    ]
+                },
+                "connectionTypes": [
+                    "BW"
+                ],
+                "classCode": null,
+                "scheduleHint": null,
+                "pressureClassHint": null,
+                "isReducing": false,
+                "isBranching": false
+            },
+            "geometry": {
+                "endPoints": [
+                    {
+                        "index": 0,
+                        "role": "end-point",
+                        "x": -1271.7193,
+                        "y": -390.4823,
+                        "z": 963.2699,
+                        "bore": 2,
+                        "connectionType": "BW",
+                        "topology": {
+                            "connectedComponentId": "295",
+                            "connectedEndpoint": 1,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    },
+                    {
+                        "index": 1,
+                        "role": "end-point",
+                        "x": -1322.5193,
+                        "y": -441.2823,
+                        "z": 963.2699,
+                        "bore": 2,
+                        "connectionType": "BW",
+                        "topology": {
+                            "connectedComponentId": "37",
+                            "connectedEndpoint": 0,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "centrePoint": {
+                    "x": -1322.5193,
+                    "y": -390.4823,
+                    "z": 963.2699
+                },
+                "branchPoints": [],
+                "auxiliaryPoints": []
+            },
+            "catalogResolution": {
+                "status": "unresolved",
+                "strategy": "e3d-catalog-resolver",
+                "legacyCandidateSpref": "/SIS/EA50",
+                "resolvedSpref": null,
+                "resolvedBy": null
+            }
+        },
+        {
+            "id": "164",
+            "branchId": "5",
+            "source": {
+                "pcfLine": 165,
+                "pipelineReference": "0001",
+                "type": "ELBOW",
+                "itemCode": "EC15",
+                "itemDescription": "ELL 45, 3000 LB, SW, ASME B16.11",
+                "pipingSpec": "SIS",
+                "skey": "ELSW",
+                "tag": "",
+                "rawAttributes": {
+                    "END-POINT": [
+                        "-1322.5193    -345.2311    1327.8402    0.5000  SW",
+                        "-1322.5193    -326.1525    1319.9376    0.5000  SW"
+                    ],
+                    "CENTRE-POINT": "-1322.5193    -334.0551    1327.8402",
+                    "SKEY": "ELSW",
+                    "ITEM-CODE": "EC15",
+                    "ITEM-DESCRIPTION": "ELL 45, 3000 LB, SW, ASME B16.11",
+                    "FABRICATION-ITEM": true,
+                    "ANGLE": "4500",
+                    "PIPING-SPEC": "SIS",
+                    "TRACING-SPEC": true,
+                    "COMPONENT-ATTRIBUTE1": "BOMCOLUMN_Material_",
+                    "COMPONENT-ATTRIBUTE2": "BOMCOLUMN_SCHClass_3000",
+                    "WEIGHT": "0.19844869817654"
+                }
+            },
+            "engineering": {
+                "angleDegrees": 45,
+                "boreProfile": {
+                    "endPoints": [
+                        0.5,
+                        0.5
+                    ],
+                    "branchPoints": [],
+                    "unique": [
+                        0.5
+                    ]
+                },
+                "connectionTypes": [
+                    "SW"
+                ],
+                "classCode": "3000",
+                "scheduleHint": null,
+                "pressureClassHint": 3000,
+                "isReducing": false,
+                "isBranching": false
+            },
+            "geometry": {
+                "endPoints": [
+                    {
+                        "index": 0,
+                        "role": "end-point",
+                        "x": -1322.5193,
+                        "y": -345.2311,
+                        "z": 1327.8402,
+                        "bore": 0.5,
+                        "connectionType": "SW",
+                        "topology": {
+                            "connectedComponentId": "121",
+                            "connectedEndpoint": 1,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    },
+                    {
+                        "index": 1,
+                        "role": "end-point",
+                        "x": -1322.5193,
+                        "y": -326.1525,
+                        "z": 1319.9376,
+                        "bore": 0.5,
+                        "connectionType": "SW",
+                        "topology": {
+                            "connectedComponentId": "187",
+                            "connectedEndpoint": 0,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "centrePoint": {
+                    "x": -1322.5193,
+                    "y": -334.0551,
+                    "z": 1327.8402
+                },
+                "branchPoints": [],
+                "auxiliaryPoints": []
+            },
+            "catalogResolution": {
+                "status": "unresolved",
+                "strategy": "e3d-catalog-resolver",
+                "legacyCandidateSpref": "/SIS/EC15",
+                "resolvedSpref": null,
+                "resolvedBy": null
+            }
+        },
+        {
+            "id": "187",
+            "branchId": "5",
+            "source": {
+                "pcfLine": 188,
+                "pipelineReference": "0001",
+                "type": "PIPE",
+                "itemCode": "PA15",
+                "itemDescription": "PIPE, SEAMLESS, 80, PE, ASTM A106",
+                "pipingSpec": "SIS",
+                "skey": "",
+                "tag": "",
+                "rawAttributes": {
+                    "END-POINT": [
+                        "-1322.5193    -326.1525    1319.9376    0.5000",
+                        "-1322.5193    -237.3912    1231.1763    0.5000"
+                    ],
+                    "ITEM-CODE": "PA15",
+                    "ITEM-DESCRIPTION": "PIPE, SEAMLESS, 80, PE, ASTM A106",
+                    "FABRICATION-ITEM": true,
+                    "PIPING-SPEC": "SIS",
+                    "TRACING-SPEC": true,
+                    "COMPONENT-ATTRIBUTE1": "BOMCOLUMN_Material_",
+                    "COMPONENT-ATTRIBUTE2": "BOMCOLUMN_SCHClass_80",
+                    "WEIGHT": "1.62209561825274"
+                }
+            },
+            "engineering": {
+                "angleDegrees": null,
+                "boreProfile": {
+                    "endPoints": [
+                        0.5,
+                        0.5
+                    ],
+                    "branchPoints": [],
+                    "unique": [
+                        0.5
+                    ]
+                },
+                "connectionTypes": [],
+                "classCode": "80",
+                "scheduleHint": "80",
+                "pressureClassHint": null,
+                "isReducing": false,
+                "isBranching": false
+            },
+            "geometry": {
+                "endPoints": [
+                    {
+                        "index": 0,
+                        "role": "end-point",
+                        "x": -1322.5193,
+                        "y": -326.1525,
+                        "z": 1319.9376,
+                        "bore": 0.5,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": "164",
+                            "connectedEndpoint": 1,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    },
+                    {
+                        "index": 1,
+                        "role": "end-point",
+                        "x": -1322.5193,
+                        "y": -237.3912,
+                        "z": 1231.1763,
+                        "bore": 0.5,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": "207",
+                            "connectedEndpoint": 0,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "centrePoint": null,
+                "branchPoints": [],
+                "auxiliaryPoints": []
+            },
+            "catalogResolution": {
+                "status": "unresolved",
+                "strategy": "e3d-catalog-resolver",
+                "legacyCandidateSpref": "/SIS/PA15",
+                "resolvedSpref": null,
+                "resolvedBy": null
+            }
+        },
+        {
+            "id": "207",
+            "branchId": "5",
+            "source": {
+                "pcfLine": 208,
+                "pipelineReference": "0001",
+                "type": "ELBOW",
+                "itemCode": "EC15",
+                "itemDescription": "ELL 45, 3000 LB, SW, ASME B16.11",
+                "pipingSpec": "SIS",
+                "skey": "ELSW",
+                "tag": "",
+                "rawAttributes": {
+                    "END-POINT": [
+                        "-1322.5193    -237.3912    1231.1763    0.5000  SW",
+                        "-1322.5193    -218.3126    1223.2737    0.5000  SW"
+                    ],
+                    "CENTRE-POINT": "-1322.5193    -229.4886    1223.2737",
+                    "SKEY": "ELSW",
+                    "ITEM-CODE": "EC15",
+                    "ITEM-DESCRIPTION": "ELL 45, 3000 LB, SW, ASME B16.11",
+                    "FABRICATION-ITEM": true,
+                    "ANGLE": "4500",
+                    "PIPING-SPEC": "SIS",
+                    "TRACING-SPEC": true,
+                    "COMPONENT-ATTRIBUTE1": "BOMCOLUMN_Material_",
+                    "COMPONENT-ATTRIBUTE2": "BOMCOLUMN_SCHClass_3000",
+                    "WEIGHT": "0.19844869817654"
+                }
+            },
+            "engineering": {
+                "angleDegrees": 45,
+                "boreProfile": {
+                    "endPoints": [
+                        0.5,
+                        0.5
+                    ],
+                    "branchPoints": [],
+                    "unique": [
+                        0.5
+                    ]
+                },
+                "connectionTypes": [
+                    "SW"
+                ],
+                "classCode": "3000",
+                "scheduleHint": null,
+                "pressureClassHint": 3000,
+                "isReducing": false,
+                "isBranching": false
+            },
+            "geometry": {
+                "endPoints": [
+                    {
+                        "index": 0,
+                        "role": "end-point",
+                        "x": -1322.5193,
+                        "y": -237.3912,
+                        "z": 1231.1763,
+                        "bore": 0.5,
+                        "connectionType": "SW",
+                        "topology": {
+                            "connectedComponentId": "187",
+                            "connectedEndpoint": 1,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    },
+                    {
+                        "index": 1,
+                        "role": "end-point",
+                        "x": -1322.5193,
+                        "y": -218.3126,
+                        "z": 1223.2737,
+                        "bore": 0.5,
+                        "connectionType": "SW",
+                        "topology": {
+                            "connectedComponentId": "230",
+                            "connectedEndpoint": 0,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "centrePoint": {
+                    "x": -1322.5193,
+                    "y": -229.4886,
+                    "z": 1223.2737
+                },
+                "branchPoints": [],
+                "auxiliaryPoints": []
+            },
+            "catalogResolution": {
+                "status": "unresolved",
+                "strategy": "e3d-catalog-resolver",
+                "legacyCandidateSpref": "/SIS/EC15",
+                "resolvedSpref": null,
+                "resolvedBy": null
+            }
+        },
+        {
+            "id": "230",
+            "branchId": "5",
+            "source": {
+                "pcfLine": 231,
+                "pipelineReference": "0001",
+                "type": "PIPE",
+                "itemCode": "PA15",
+                "itemDescription": "PIPE, SEAMLESS, 80, PE, ASTM A106",
+                "pipingSpec": "SIS",
+                "skey": "",
+                "tag": "",
+                "rawAttributes": {
+                    "END-POINT": [
+                        "-1322.5193    -218.3126    1223.2737    0.5000",
+                        "-1322.5193    -36.5661    1223.2737    0.5000"
+                    ],
+                    "ITEM-CODE": "PA15",
+                    "ITEM-DESCRIPTION": "PIPE, SEAMLESS, 80, PE, ASTM A106",
+                    "FABRICATION-ITEM": true,
+                    "PIPING-SPEC": "SIS",
+                    "TRACING-SPEC": true,
+                    "COMPONENT-ATTRIBUTE1": "BOMCOLUMN_Material_",
+                    "COMPONENT-ATTRIBUTE2": "BOMCOLUMN_SCHClass_80",
+                    "WEIGHT": "1.62209561825274"
+                }
+            },
+            "engineering": {
+                "angleDegrees": null,
+                "boreProfile": {
+                    "endPoints": [
+                        0.5,
+                        0.5
+                    ],
+                    "branchPoints": [],
+                    "unique": [
+                        0.5
+                    ]
+                },
+                "connectionTypes": [],
+                "classCode": "80",
+                "scheduleHint": "80",
+                "pressureClassHint": null,
+                "isReducing": false,
+                "isBranching": false
+            },
+            "geometry": {
+                "endPoints": [
+                    {
+                        "index": 0,
+                        "role": "end-point",
+                        "x": -1322.5193,
+                        "y": -218.3126,
+                        "z": 1223.2737,
+                        "bore": 0.5,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": "207",
+                            "connectedEndpoint": 1,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    },
+                    {
+                        "index": 1,
+                        "role": "end-point",
+                        "x": -1322.5193,
+                        "y": -36.5661,
+                        "z": 1223.2737,
+                        "bore": 0.5,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": "250",
+                            "connectedEndpoint": 0,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "centrePoint": null,
+                "branchPoints": [],
+                "auxiliaryPoints": []
+            },
+            "catalogResolution": {
+                "status": "unresolved",
+                "strategy": "e3d-catalog-resolver",
+                "legacyCandidateSpref": "/SIS/PA15",
+                "resolvedSpref": null,
+                "resolvedBy": null
+            }
+        },
+        {
+            "id": "250",
+            "branchId": "5",
+            "source": {
+                "pcfLine": 251,
+                "pipelineReference": "0001",
+                "type": "ELBOW",
+                "itemCode": "EB15",
+                "itemDescription": "ELL 90, 3000 LB, SW, ASME B16.11",
+                "pipingSpec": "SIS",
+                "skey": "ELSW",
+                "tag": "",
+                "rawAttributes": {
+                    "END-POINT": [
+                        "-1322.5193    -36.5661    1223.2737    0.5000  SW",
+                        "-1322.5193    -20.8181    1239.0217    0.5000  SW"
+                    ],
+                    "CENTRE-POINT": "-1322.5193    -20.8181    1223.2737",
+                    "SKEY": "ELSW",
+                    "ITEM-CODE": "EB15",
+                    "ITEM-DESCRIPTION": "ELL 90, 3000 LB, SW, ASME B16.11",
+                    "FABRICATION-ITEM": true,
+                    "ANGLE": "9000",
+                    "PIPING-SPEC": "SIS",
+                    "TRACING-SPEC": true,
+                    "COMPONENT-ATTRIBUTE1": "BOMCOLUMN_Material_",
+                    "COMPONENT-ATTRIBUTE2": "BOMCOLUMN_SCHClass_3000",
+                    "WEIGHT": "0.22679851220176"
+                }
+            },
+            "engineering": {
+                "angleDegrees": 90,
+                "boreProfile": {
+                    "endPoints": [
+                        0.5,
+                        0.5
+                    ],
+                    "branchPoints": [],
+                    "unique": [
+                        0.5
+                    ]
+                },
+                "connectionTypes": [
+                    "SW"
+                ],
+                "classCode": "3000",
+                "scheduleHint": null,
+                "pressureClassHint": 3000,
+                "isReducing": false,
+                "isBranching": false
+            },
+            "geometry": {
+                "endPoints": [
+                    {
+                        "index": 0,
+                        "role": "end-point",
+                        "x": -1322.5193,
+                        "y": -36.5661,
+                        "z": 1223.2737,
+                        "bore": 0.5,
+                        "connectionType": "SW",
+                        "topology": {
+                            "connectedComponentId": "230",
+                            "connectedEndpoint": 1,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    },
+                    {
+                        "index": 1,
+                        "role": "end-point",
+                        "x": -1322.5193,
+                        "y": -20.8181,
+                        "z": 1239.0217,
+                        "bore": 0.5,
+                        "connectionType": "SW",
+                        "topology": {
+                            "connectedComponentId": "264",
+                            "connectedEndpoint": 0,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "centrePoint": {
+                    "x": -1322.5193,
+                    "y": -20.8181,
+                    "z": 1223.2737
+                },
+                "branchPoints": [],
+                "auxiliaryPoints": []
+            },
+            "catalogResolution": {
+                "status": "unresolved",
+                "strategy": "e3d-catalog-resolver",
+                "legacyCandidateSpref": "/SIS/EB15",
+                "resolvedSpref": null,
+                "resolvedBy": null
+            }
+        },
+        {
+            "id": "264",
+            "branchId": "5",
+            "source": {
+                "pcfLine": 265,
+                "pipelineReference": "0001",
+                "type": "PIPE",
+                "itemCode": "PA15",
+                "itemDescription": "PIPE, SEAMLESS, 80, PE, ASTM A106",
+                "pipingSpec": "SIS",
+                "skey": "",
+                "tag": "",
+                "rawAttributes": {
+                    "END-POINT": [
+                        "-1322.5193    -20.8181    1239.0217    0.5000",
+                        "-1322.5193    -20.8181    1355.0530    0.5000"
+                    ],
+                    "ITEM-CODE": "PA15",
+                    "ITEM-DESCRIPTION": "PIPE, SEAMLESS, 80, PE, ASTM A106",
+                    "FABRICATION-ITEM": true,
+                    "PIPING-SPEC": "SIS",
+                    "TRACING-SPEC": true,
+                    "COMPONENT-ATTRIBUTE1": "BOMCOLUMN_Material_",
+                    "COMPONENT-ATTRIBUTE2": "BOMCOLUMN_SCHClass_80",
+                    "WEIGHT": "1.62209561825274"
+                }
+            },
+            "engineering": {
+                "angleDegrees": null,
+                "boreProfile": {
+                    "endPoints": [
+                        0.5,
+                        0.5
+                    ],
+                    "branchPoints": [],
+                    "unique": [
+                        0.5
+                    ]
+                },
+                "connectionTypes": [],
+                "classCode": "80",
+                "scheduleHint": "80",
+                "pressureClassHint": null,
+                "isReducing": false,
+                "isBranching": false
+            },
+            "geometry": {
+                "endPoints": [
+                    {
+                        "index": 0,
+                        "role": "end-point",
+                        "x": -1322.5193,
+                        "y": -20.8181,
+                        "z": 1239.0217,
+                        "bore": 0.5,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": "250",
+                            "connectedEndpoint": 1,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    },
+                    {
+                        "index": 1,
+                        "role": "end-point",
+                        "x": -1322.5193,
+                        "y": -20.8181,
+                        "z": 1355.053,
+                        "bore": 0.5,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": null,
+                            "connectedEndpoint": null,
+                            "extremity": "T",
+                            "connectionRole": "TAIL",
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "centrePoint": null,
+                "branchPoints": [],
+                "auxiliaryPoints": []
+            },
+            "catalogResolution": {
+                "status": "unresolved",
+                "strategy": "e3d-catalog-resolver",
+                "legacyCandidateSpref": "/SIS/PA15",
+                "resolvedSpref": null,
+                "resolvedBy": null
+            }
+        },
+        {
+            "id": "284",
+            "branchId": "2",
+            "source": {
+                "pcfLine": 285,
+                "pipelineReference": "0001",
+                "type": "PIPE",
+                "itemCode": "PA80",
+                "itemDescription": "PIPE, SEAMLESS, 40, PE, ASTM A106",
+                "pipingSpec": "SIS",
+                "skey": "",
+                "tag": "",
+                "rawAttributes": {
+                    "END-POINT": [
+                        "-76.2000    -1848.5455    478.9369    3.0000",
+                        "-1278.9437    -1848.5455    478.9369    3.0000"
+                    ],
+                    "ITEM-CODE": "PA80",
+                    "ITEM-DESCRIPTION": "PIPE, SEAMLESS, 40, PE, ASTM A106",
+                    "FABRICATION-ITEM": true,
+                    "PIPING-SPEC": "SIS",
+                    "TRACING-SPEC": true,
+                    "COMPONENT-ATTRIBUTE1": "BOMCOLUMN_Material_",
+                    "COMPONENT-ATTRIBUTE2": "BOMCOLUMN_SCHClass_40",
+                    "WEIGHT": "11.2802612718861"
+                }
+            },
+            "engineering": {
+                "angleDegrees": null,
+                "boreProfile": {
+                    "endPoints": [
+                        3,
+                        3
+                    ],
+                    "branchPoints": [],
+                    "unique": [
+                        3
+                    ]
+                },
+                "connectionTypes": [],
+                "classCode": "40",
+                "scheduleHint": "40",
+                "pressureClassHint": null,
+                "isReducing": false,
+                "isBranching": false
+            },
+            "geometry": {
+                "endPoints": [
+                    {
+                        "index": 0,
+                        "role": "end-point",
+                        "x": -76.2,
+                        "y": -1848.5455,
+                        "z": 478.9369,
+                        "bore": 3,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": "315",
+                            "connectedEndpoint": 1,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    },
+                    {
+                        "index": 1,
+                        "role": "end-point",
+                        "x": -1278.9437,
+                        "y": -1848.5455,
+                        "z": 478.9369,
+                        "bore": 3,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": null,
+                            "connectedEndpoint": null,
+                            "extremity": "T",
+                            "connectionRole": "TAIL",
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "centrePoint": null,
+                "branchPoints": [],
+                "auxiliaryPoints": []
+            },
+            "catalogResolution": {
+                "status": "unresolved",
+                "strategy": "e3d-catalog-resolver",
+                "legacyCandidateSpref": "/SIS/PA80",
+                "resolvedSpref": null,
+                "resolvedBy": null
+            }
+        },
+        {
+            "id": "295",
+            "branchId": "4",
+            "source": {
+                "pcfLine": 296,
+                "pipelineReference": "0001",
+                "type": "PIPE",
+                "itemCode": "PA50",
+                "itemDescription": "PIPE, SEAMLESS, 40, PE, ASTM A106",
+                "pipingSpec": "SIS",
+                "skey": "",
+                "tag": "",
+                "rawAttributes": {
+                    "END-POINT": [
+                        "-50.8000    -390.4823    963.2699    2.0000",
+                        "-1271.7193    -390.4823    963.2699    2.0000"
+                    ],
+                    "ITEM-CODE": "PA50",
+                    "ITEM-DESCRIPTION": "PIPE, SEAMLESS, 40, PE, ASTM A106",
+                    "FABRICATION-ITEM": true,
+                    "PIPING-SPEC": "SIS",
+                    "TRACING-SPEC": true,
+                    "COMPONENT-ATTRIBUTE1": "BOMCOLUMN_Material_",
+                    "COMPONENT-ATTRIBUTE2": "BOMCOLUMN_SCHClass_40",
+                    "WEIGHT": "5.44666969064683"
+                }
+            },
+            "engineering": {
+                "angleDegrees": null,
+                "boreProfile": {
+                    "endPoints": [
+                        2,
+                        2
+                    ],
+                    "branchPoints": [],
+                    "unique": [
+                        2
+                    ]
+                },
+                "connectionTypes": [],
+                "classCode": "40",
+                "scheduleHint": "40",
+                "pressureClassHint": null,
+                "isReducing": false,
+                "isBranching": false
+            },
+            "geometry": {
+                "endPoints": [
+                    {
+                        "index": 0,
+                        "role": "end-point",
+                        "x": -50.8,
+                        "y": -390.4823,
+                        "z": 963.2699,
+                        "bore": 2,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": "338",
+                            "connectedEndpoint": 1,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    },
+                    {
+                        "index": 1,
+                        "role": "end-point",
+                        "x": -1271.7193,
+                        "y": -390.4823,
+                        "z": 963.2699,
+                        "bore": 2,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": "132",
+                            "connectedEndpoint": 0,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "centrePoint": null,
+                "branchPoints": [],
+                "auxiliaryPoints": []
+            },
+            "catalogResolution": {
+                "status": "unresolved",
+                "strategy": "e3d-catalog-resolver",
+                "legacyCandidateSpref": "/SIS/PA50",
+                "resolvedSpref": null,
+                "resolvedBy": null
+            }
+        },
+        {
+            "id": "315",
+            "branchId": "2",
+            "source": {
+                "pcfLine": 316,
+                "pipelineReference": "0001",
+                "type": "ELBOW",
+                "itemCode": "EA80",
+                "itemDescription": "ELL 90 SR, BW, ASME B16.9",
+                "pipingSpec": "SIS",
+                "skey": "ELBW",
+                "tag": "",
+                "rawAttributes": {
+                    "END-POINT": [
+                        "0.0000    -1772.3455    478.9369    3.0000  BW",
+                        "-76.2000    -1848.5455    478.9369    3.0000  BW"
+                    ],
+                    "CENTRE-POINT": "0.0000    -1848.5455    478.9369",
+                    "SKEY": "ELBW",
+                    "ITEM-CODE": "EA80",
+                    "ITEM-DESCRIPTION": "ELL 90 SR, BW, ASME B16.9",
+                    "FABRICATION-ITEM": true,
+                    "ANGLE": "9000",
+                    "PIPING-SPEC": "SIS",
+                    "TRACING-SPEC": true,
+                    "COMPONENT-ATTRIBUTE1": "BOMCOLUMN_Material_",
+                    "COMPONENT-ATTRIBUTE2": "BOMCOLUMN_SCHClass_",
+                    "WEIGHT": "1.36079107321056"
+                }
+            },
+            "engineering": {
+                "angleDegrees": 90,
+                "boreProfile": {
+                    "endPoints": [
+                        3,
+                        3
+                    ],
+                    "branchPoints": [],
+                    "unique": [
+                        3
+                    ]
+                },
+                "connectionTypes": [
+                    "BW"
+                ],
+                "classCode": null,
+                "scheduleHint": null,
+                "pressureClassHint": null,
+                "isReducing": false,
+                "isBranching": false
+            },
+            "geometry": {
+                "endPoints": [
+                    {
+                        "index": 0,
+                        "role": "end-point",
+                        "x": 0,
+                        "y": -1772.3455,
+                        "z": 478.9369,
+                        "bore": 3,
+                        "connectionType": "BW",
+                        "topology": {
+                            "connectedComponentId": "496",
+                            "connectedEndpoint": 1,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    },
+                    {
+                        "index": 1,
+                        "role": "end-point",
+                        "x": -76.2,
+                        "y": -1848.5455,
+                        "z": 478.9369,
+                        "bore": 3,
+                        "connectionType": "BW",
+                        "topology": {
+                            "connectedComponentId": "284",
+                            "connectedEndpoint": 0,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "centrePoint": {
+                    "x": 0,
+                    "y": -1848.5455,
+                    "z": 478.9369
+                },
+                "branchPoints": [],
+                "auxiliaryPoints": []
+            },
+            "catalogResolution": {
+                "status": "unresolved",
+                "strategy": "e3d-catalog-resolver",
+                "legacyCandidateSpref": "/SIS/EA80",
+                "resolvedSpref": null,
+                "resolvedBy": null
+            }
+        },
+        {
+            "id": "338",
+            "branchId": "4",
+            "source": {
+                "pcfLine": 339,
+                "pipelineReference": "0001",
+                "type": "ELBOW",
+                "itemCode": "EA50",
+                "itemDescription": "ELL 90 SR, BW, ASME B16.9",
+                "pipingSpec": "SIS",
+                "skey": "ELBW",
+                "tag": "",
+                "rawAttributes": {
+                    "END-POINT": [
+                        "-0.0000    -441.2823    963.2699    2.0000  BW",
+                        "-50.8000    -390.4823    963.2699    2.0000  BW"
+                    ],
+                    "CENTRE-POINT": "-0.0000    -390.4823    963.2699",
+                    "SKEY": "ELBW",
+                    "ITEM-CODE": "EA50",
+                    "ITEM-DESCRIPTION": "ELL 90 SR, BW, ASME B16.9",
+                    "FABRICATION-ITEM": true,
+                    "ANGLE": "9000",
+                    "PIPING-SPEC": "SIS",
+                    "TRACING-SPEC": true,
+                    "COMPONENT-ATTRIBUTE1": "BOMCOLUMN_Material_",
+                    "COMPONENT-ATTRIBUTE2": "BOMCOLUMN_SCHClass_",
+                    "WEIGHT": "0.45359702440352"
+                }
+            },
+            "engineering": {
+                "angleDegrees": 90,
+                "boreProfile": {
+                    "endPoints": [
+                        2,
+                        2
+                    ],
+                    "branchPoints": [],
+                    "unique": [
+                        2
+                    ]
+                },
+                "connectionTypes": [
+                    "BW"
+                ],
+                "classCode": null,
+                "scheduleHint": null,
+                "pressureClassHint": null,
+                "isReducing": false,
+                "isBranching": false
+            },
+            "geometry": {
+                "endPoints": [
+                    {
+                        "index": 0,
+                        "role": "end-point",
+                        "x": -0,
+                        "y": -441.2823,
+                        "z": 963.2699,
+                        "bore": 2,
+                        "connectionType": "BW",
+                        "topology": {
+                            "connectedComponentId": "415",
+                            "connectedEndpoint": 1,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    },
+                    {
+                        "index": 1,
+                        "role": "end-point",
+                        "x": -50.8,
+                        "y": -390.4823,
+                        "z": 963.2699,
+                        "bore": 2,
+                        "connectionType": "BW",
+                        "topology": {
+                            "connectedComponentId": "295",
+                            "connectedEndpoint": 0,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "centrePoint": {
+                    "x": -0,
+                    "y": -390.4823,
+                    "z": 963.2699
+                },
+                "branchPoints": [],
+                "auxiliaryPoints": []
+            },
+            "catalogResolution": {
+                "status": "unresolved",
+                "strategy": "e3d-catalog-resolver",
+                "legacyCandidateSpref": "/SIS/EA50",
+                "resolvedSpref": null,
+                "resolvedBy": null
+            }
+        },
+        {
+            "id": "361",
+            "branchId": "3",
+            "source": {
+                "pcfLine": 362,
+                "pipelineReference": "0001",
+                "type": "ELBOW",
+                "itemCode": "EA65",
+                "itemDescription": "ELL 90 SR, BW, ASME B16.9",
+                "pipingSpec": "SIS",
+                "skey": "ELBW",
+                "tag": "",
+                "rawAttributes": {
+                    "END-POINT": [
+                        "-0.0000    -935.4488    1494.0466    2.5000  BW",
+                        "-0.0000    -871.9488    1557.5466    2.5000  BW"
+                    ],
+                    "CENTRE-POINT": "-0.0000    -935.4488    1557.5466",
+                    "SKEY": "ELBW",
+                    "ITEM-CODE": "EA65",
+                    "ITEM-DESCRIPTION": "ELL 90 SR, BW, ASME B16.9",
+                    "FABRICATION-ITEM": true,
+                    "ANGLE": "9000",
+                    "PIPING-SPEC": "SIS",
+                    "TRACING-SPEC": true,
+                    "COMPONENT-ATTRIBUTE1": "BOMCOLUMN_Material_",
+                    "COMPONENT-ATTRIBUTE2": "BOMCOLUMN_SCHClass_",
+                    "WEIGHT": "0.966161661979497"
+                }
+            },
+            "engineering": {
+                "angleDegrees": 90,
+                "boreProfile": {
+                    "endPoints": [
+                        2.5,
+                        2.5
+                    ],
+                    "branchPoints": [],
+                    "unique": [
+                        2.5
+                    ]
+                },
+                "connectionTypes": [
+                    "BW"
+                ],
+                "classCode": null,
+                "scheduleHint": null,
+                "pressureClassHint": null,
+                "isReducing": false,
+                "isBranching": false
+            },
+            "geometry": {
+                "endPoints": [
+                    {
+                        "index": 0,
+                        "role": "end-point",
+                        "x": -0,
+                        "y": -935.4488,
+                        "z": 1494.0466,
+                        "bore": 2.5,
+                        "connectionType": "BW",
+                        "topology": {
+                            "connectedComponentId": "395",
+                            "connectedEndpoint": 1,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    },
+                    {
+                        "index": 1,
+                        "role": "end-point",
+                        "x": -0,
+                        "y": -871.9488,
+                        "z": 1557.5466,
+                        "bore": 2.5,
+                        "connectionType": "BW",
+                        "topology": {
+                            "connectedComponentId": "384",
+                            "connectedEndpoint": 0,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "centrePoint": {
+                    "x": -0,
+                    "y": -935.4488,
+                    "z": 1557.5466
+                },
+                "branchPoints": [],
+                "auxiliaryPoints": []
+            },
+            "catalogResolution": {
+                "status": "unresolved",
+                "strategy": "e3d-catalog-resolver",
+                "legacyCandidateSpref": "/SIS/EA65",
+                "resolvedSpref": null,
+                "resolvedBy": null
+            }
+        },
+        {
+            "id": "384",
+            "branchId": "3",
+            "source": {
+                "pcfLine": 385,
+                "pipelineReference": "0001",
+                "type": "PIPE",
+                "itemCode": "PA65",
+                "itemDescription": "PIPE, SEAMLESS, 40, PE, ASTM A106",
+                "pipingSpec": "SIS",
+                "skey": "",
+                "tag": "",
+                "rawAttributes": {
+                    "END-POINT": [
+                        "-0.0000    -871.9488    1557.5466    2.5000",
+                        "-0.0000    -272.5522    1557.5466    2.5000"
+                    ],
+                    "ITEM-CODE": "PA65",
+                    "ITEM-DESCRIPTION": "PIPE, SEAMLESS, 40, PE, ASTM A106",
+                    "FABRICATION-ITEM": true,
+                    "PIPING-SPEC": "SIS",
+                    "TRACING-SPEC": true,
+                    "COMPONENT-ATTRIBUTE1": "BOMCOLUMN_Material_",
+                    "COMPONENT-ATTRIBUTE2": "BOMCOLUMN_SCHClass_40",
+                    "WEIGHT": "8.63133448244579"
+                }
+            },
+            "engineering": {
+                "angleDegrees": null,
+                "boreProfile": {
+                    "endPoints": [
+                        2.5,
+                        2.5
+                    ],
+                    "branchPoints": [],
+                    "unique": [
+                        2.5
+                    ]
+                },
+                "connectionTypes": [],
+                "classCode": "40",
+                "scheduleHint": "40",
+                "pressureClassHint": null,
+                "isReducing": false,
+                "isBranching": false
+            },
+            "geometry": {
+                "endPoints": [
+                    {
+                        "index": 0,
+                        "role": "end-point",
+                        "x": -0,
+                        "y": -871.9488,
+                        "z": 1557.5466,
+                        "bore": 2.5,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": "361",
+                            "connectedEndpoint": 1,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    },
+                    {
+                        "index": 1,
+                        "role": "end-point",
+                        "x": -0,
+                        "y": -272.5522,
+                        "z": 1557.5466,
+                        "bore": 2.5,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": null,
+                            "connectedEndpoint": null,
+                            "extremity": "T",
+                            "connectionRole": "TAIL",
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "centrePoint": null,
+                "branchPoints": [],
+                "auxiliaryPoints": []
+            },
+            "catalogResolution": {
+                "status": "unresolved",
+                "strategy": "e3d-catalog-resolver",
+                "legacyCandidateSpref": "/SIS/PA65",
+                "resolvedSpref": null,
+                "resolvedBy": null
+            }
+        },
+        {
+            "id": "395",
+            "branchId": "3",
+            "source": {
+                "pcfLine": 396,
+                "pipelineReference": "0001",
+                "type": "PIPE",
+                "itemCode": "PA65",
+                "itemDescription": "PIPE, SEAMLESS, 40, PE, ASTM A106",
+                "pipingSpec": "SIS",
+                "skey": "",
+                "tag": "",
+                "rawAttributes": {
+                    "END-POINT": [
+                        "-0.0000    -935.4488    1039.4699    2.5000",
+                        "-0.0000    -935.4488    1494.0466    2.5000"
+                    ],
+                    "ITEM-CODE": "PA65",
+                    "ITEM-DESCRIPTION": "PIPE, SEAMLESS, 40, PE, ASTM A106",
+                    "FABRICATION-ITEM": true,
+                    "PIPING-SPEC": "SIS",
+                    "TRACING-SPEC": true,
+                    "COMPONENT-ATTRIBUTE1": "BOMCOLUMN_Material_",
+                    "COMPONENT-ATTRIBUTE2": "BOMCOLUMN_SCHClass_40",
+                    "WEIGHT": "8.63133448244579"
+                }
+            },
+            "engineering": {
+                "angleDegrees": null,
+                "boreProfile": {
+                    "endPoints": [
+                        2.5,
+                        2.5
+                    ],
+                    "branchPoints": [],
+                    "unique": [
+                        2.5
+                    ]
+                },
+                "connectionTypes": [],
+                "classCode": "40",
+                "scheduleHint": "40",
+                "pressureClassHint": null,
+                "isReducing": false,
+                "isBranching": false
+            },
+            "geometry": {
+                "endPoints": [
+                    {
+                        "index": 0,
+                        "role": "end-point",
+                        "x": -0,
+                        "y": -935.4488,
+                        "z": 1039.4699,
+                        "bore": 2.5,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": "444",
+                            "connectedEndpoint": 1,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    },
+                    {
+                        "index": 1,
+                        "role": "end-point",
+                        "x": -0,
+                        "y": -935.4488,
+                        "z": 1494.0466,
+                        "bore": 2.5,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": "361",
+                            "connectedEndpoint": 0,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "centrePoint": null,
+                "branchPoints": [],
+                "auxiliaryPoints": []
+            },
+            "catalogResolution": {
+                "status": "unresolved",
+                "strategy": "e3d-catalog-resolver",
+                "legacyCandidateSpref": "/SIS/PA65",
+                "resolvedSpref": null,
+                "resolvedBy": null
+            }
+        },
+        {
+            "id": "415",
+            "branchId": "4",
+            "source": {
+                "pcfLine": 416,
+                "pipelineReference": "0001",
+                "type": "PIPE",
+                "itemCode": "PA50",
+                "itemDescription": "PIPE, SEAMLESS, 40, PE, ASTM A106",
+                "pipingSpec": "SIS",
+                "skey": "",
+                "tag": "",
+                "rawAttributes": {
+                    "END-POINT": [
+                        "-0.0000    -865.5988    963.2699    2.0000",
+                        "-0.0000    -441.2823    963.2699    2.0000"
+                    ],
+                    "ITEM-CODE": "PA50",
+                    "ITEM-DESCRIPTION": "PIPE, SEAMLESS, 40, PE, ASTM A106",
+                    "FABRICATION-ITEM": true,
+                    "PIPING-SPEC": "SIS",
+                    "TRACING-SPEC": true,
+                    "COMPONENT-ATTRIBUTE1": "BOMCOLUMN_Material_",
+                    "COMPONENT-ATTRIBUTE2": "BOMCOLUMN_SCHClass_40",
+                    "WEIGHT": "5.44666969064683"
+                }
+            },
+            "engineering": {
+                "angleDegrees": null,
+                "boreProfile": {
+                    "endPoints": [
+                        2,
+                        2
+                    ],
+                    "branchPoints": [],
+                    "unique": [
+                        2
+                    ]
+                },
+                "connectionTypes": [],
+                "classCode": "40",
+                "scheduleHint": "40",
+                "pressureClassHint": null,
+                "isReducing": false,
+                "isBranching": false
+            },
+            "geometry": {
+                "endPoints": [
+                    {
+                        "index": 0,
+                        "role": "end-point",
+                        "x": -0,
+                        "y": -865.5988,
+                        "z": 963.2699,
+                        "bore": 2,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": null,
+                            "connectedEndpoint": null,
+                            "extremity": "H",
+                            "connectionRole": "HEAD",
+                            "branchOriginComponentId": "444",
+                            "branchOriginPpoint": 3
+                        }
+                    },
+                    {
+                        "index": 1,
+                        "role": "end-point",
+                        "x": -0,
+                        "y": -441.2823,
+                        "z": 963.2699,
+                        "bore": 2,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": "338",
+                            "connectedEndpoint": 0,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "centrePoint": null,
+                "branchPoints": [],
+                "auxiliaryPoints": []
+            },
+            "catalogResolution": {
+                "status": "unresolved",
+                "strategy": "e3d-catalog-resolver",
+                "legacyCandidateSpref": "/SIS/PA50",
+                "resolvedSpref": null,
+                "resolvedBy": null
+            }
+        },
+        {
+            "id": "444",
+            "branchId": "3",
+            "source": {
+                "pcfLine": 445,
+                "pipelineReference": "0001",
+                "type": "TEE",
+                "itemCode": "TR65X50",
+                "itemDescription": "TEE (RED), SCH 40, BW, ASME B16.9",
+                "pipingSpec": "SIS",
+                "skey": "TEBW",
+                "tag": "",
+                "rawAttributes": {
+                    "END-POINT": [
+                        "-0.0000    -935.4488    887.0699    2.5000  BW",
+                        "-0.0000    -935.4488    1039.4699    2.5000  BW"
+                    ],
+                    "CENTRE-POINT": "-0.0000    -935.4488    963.2699",
+                    "BRANCH1-POINT": "-0.0000    -865.5988    963.2699    2.0000  BW",
+                    "SKEY": "TEBW",
+                    "ITEM-CODE": "TR65X50",
+                    "ITEM-DESCRIPTION": "TEE (RED), SCH 40, BW, ASME B16.9",
+                    "FABRICATION-ITEM": true,
+                    "PIPING-SPEC": "SIS",
+                    "TRACING-SPEC": true,
+                    "COMPONENT-ATTRIBUTE1": "BOMCOLUMN_Material_",
+                    "COMPONENT-ATTRIBUTE2": "BOMCOLUMN_SCHClass_40",
+                    "WEIGHT": "2.2679851220176"
+                }
+            },
+            "engineering": {
+                "angleDegrees": null,
+                "boreProfile": {
+                    "endPoints": [
+                        2.5,
+                        2.5
+                    ],
+                    "branchPoints": [
+                        2
+                    ],
+                    "unique": [
+                        2.5,
+                        2
+                    ]
+                },
+                "connectionTypes": [
+                    "BW"
+                ],
+                "classCode": "40",
+                "scheduleHint": "40",
+                "pressureClassHint": null,
+                "isReducing": true,
+                "isBranching": true
+            },
+            "geometry": {
+                "endPoints": [
+                    {
+                        "index": 0,
+                        "role": "end-point",
+                        "x": -0,
+                        "y": -935.4488,
+                        "z": 887.0699,
+                        "bore": 2.5,
+                        "connectionType": "BW",
+                        "topology": {
+                            "connectedComponentId": "467",
+                            "connectedEndpoint": 1,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    },
+                    {
+                        "index": 1,
+                        "role": "end-point",
+                        "x": -0,
+                        "y": -935.4488,
+                        "z": 1039.4699,
+                        "bore": 2.5,
+                        "connectionType": "BW",
+                        "topology": {
+                            "connectedComponentId": "395",
+                            "connectedEndpoint": 0,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "centrePoint": {
+                    "x": -0,
+                    "y": -935.4488,
+                    "z": 963.2699
+                },
+                "branchPoints": [
+                    {
+                        "index": 0,
+                        "role": "BRANCH1-POINT",
+                        "x": -0,
+                        "y": -865.5988,
+                        "z": 963.2699,
+                        "bore": 2,
+                        "connectionType": "BW",
+                        "topology": {
+                            "connectedComponentId": null,
+                            "connectedEndpoint": null,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "auxiliaryPoints": []
+            },
+            "catalogResolution": {
+                "status": "unresolved",
+                "strategy": "e3d-catalog-resolver",
+                "legacyCandidateSpref": "/SIS/TR65X50",
+                "resolvedSpref": null,
+                "resolvedBy": null
+            }
+        },
+        {
+            "id": "467",
+            "branchId": "3",
+            "source": {
+                "pcfLine": 468,
+                "pipelineReference": "0001",
+                "type": "PIPE",
+                "itemCode": "PA65",
+                "itemDescription": "PIPE, SEAMLESS, 40, PE, ASTM A106",
+                "pipingSpec": "SIS",
+                "skey": "",
+                "tag": "",
+                "rawAttributes": {
+                    "END-POINT": [
+                        "-0.0000    -935.4488    561.4869    2.5000",
+                        "-0.0000    -935.4488    887.0699    2.5000"
+                    ],
+                    "ITEM-CODE": "PA65",
+                    "ITEM-DESCRIPTION": "PIPE, SEAMLESS, 40, PE, ASTM A106",
+                    "FABRICATION-ITEM": true,
+                    "PIPING-SPEC": "SIS",
+                    "TRACING-SPEC": true,
+                    "COMPONENT-ATTRIBUTE1": "BOMCOLUMN_Material_",
+                    "COMPONENT-ATTRIBUTE2": "BOMCOLUMN_SCHClass_40",
+                    "WEIGHT": "8.63133448244579"
+                }
+            },
+            "engineering": {
+                "angleDegrees": null,
+                "boreProfile": {
+                    "endPoints": [
+                        2.5,
+                        2.5
+                    ],
+                    "branchPoints": [],
+                    "unique": [
+                        2.5
+                    ]
+                },
+                "connectionTypes": [],
+                "classCode": "40",
+                "scheduleHint": "40",
+                "pressureClassHint": null,
+                "isReducing": false,
+                "isBranching": false
+            },
+            "geometry": {
+                "endPoints": [
+                    {
+                        "index": 0,
+                        "role": "end-point",
+                        "x": -0,
+                        "y": -935.4488,
+                        "z": 561.4869,
+                        "bore": 2.5,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": null,
+                            "connectedEndpoint": null,
+                            "extremity": "H",
+                            "connectionRole": "HEAD",
+                            "branchOriginComponentId": "516",
+                            "branchOriginPpoint": 3
+                        }
+                    },
+                    {
+                        "index": 1,
+                        "role": "end-point",
+                        "x": -0,
+                        "y": -935.4488,
+                        "z": 887.0699,
+                        "bore": 2.5,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": "444",
+                            "connectedEndpoint": 0,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "centrePoint": null,
+                "branchPoints": [],
+                "auxiliaryPoints": []
+            },
+            "catalogResolution": {
+                "status": "unresolved",
+                "strategy": "e3d-catalog-resolver",
+                "legacyCandidateSpref": "/SIS/PA65",
+                "resolvedSpref": null,
+                "resolvedBy": null
+            }
+        },
+        {
+            "id": "496",
+            "branchId": "2",
+            "source": {
+                "pcfLine": 497,
+                "pipelineReference": "0001",
+                "type": "PIPE",
+                "itemCode": "PA80",
+                "itemDescription": "PIPE, SEAMLESS, 40, PE, ASTM A106",
+                "pipingSpec": "SIS",
+                "skey": "",
+                "tag": "",
+                "rawAttributes": {
+                    "END-POINT": [
+                        "0.0000    -1021.3008    478.9369    3.0000",
+                        "0.0000    -1772.3455    478.9369    3.0000"
+                    ],
+                    "ITEM-CODE": "PA80",
+                    "ITEM-DESCRIPTION": "PIPE, SEAMLESS, 40, PE, ASTM A106",
+                    "FABRICATION-ITEM": true,
+                    "PIPING-SPEC": "SIS",
+                    "TRACING-SPEC": true,
+                    "COMPONENT-ATTRIBUTE1": "BOMCOLUMN_Material_",
+                    "COMPONENT-ATTRIBUTE2": "BOMCOLUMN_SCHClass_40",
+                    "WEIGHT": "11.2802612718861"
+                }
+            },
+            "engineering": {
+                "angleDegrees": null,
+                "boreProfile": {
+                    "endPoints": [
+                        3,
+                        3
+                    ],
+                    "branchPoints": [],
+                    "unique": [
+                        3
+                    ]
+                },
+                "connectionTypes": [],
+                "classCode": "40",
+                "scheduleHint": "40",
+                "pressureClassHint": null,
+                "isReducing": false,
+                "isBranching": false
+            },
+            "geometry": {
+                "endPoints": [
+                    {
+                        "index": 0,
+                        "role": "end-point",
+                        "x": 0,
+                        "y": -1021.3008,
+                        "z": 478.9369,
+                        "bore": 3,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": "516",
+                            "connectedEndpoint": 1,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    },
+                    {
+                        "index": 1,
+                        "role": "end-point",
+                        "x": 0,
+                        "y": -1772.3455,
+                        "z": 478.9369,
+                        "bore": 3,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": "315",
+                            "connectedEndpoint": 0,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "centrePoint": null,
+                "branchPoints": [],
+                "auxiliaryPoints": []
+            },
+            "catalogResolution": {
+                "status": "unresolved",
+                "strategy": "e3d-catalog-resolver",
+                "legacyCandidateSpref": "/SIS/PA80",
+                "resolvedSpref": null,
+                "resolvedBy": null
+            }
+        },
+        {
+            "id": "516",
+            "branchId": "2",
+            "source": {
+                "pcfLine": 517,
+                "pipelineReference": "0001",
+                "type": "TEE",
+                "itemCode": "TR80X65",
+                "itemDescription": "TEE (RED), SCH 40, BW, ASME B16.9",
+                "pipingSpec": "SIS",
+                "skey": "TEBW",
+                "tag": "",
+                "rawAttributes": {
+                    "END-POINT": [
+                        "0.0000    -849.5968    478.9369    3.0000  BW",
+                        "0.0000    -1021.3008    478.9369    3.0000  BW"
+                    ],
+                    "CENTRE-POINT": "0.0000    -935.4488    478.9369",
+                    "BRANCH1-POINT": "-0.0000    -935.4488    561.4869    2.5000  BW",
+                    "SKEY": "TEBW",
+                    "ITEM-CODE": "TR80X65",
+                    "ITEM-DESCRIPTION": "TEE (RED), SCH 40, BW, ASME B16.9",
+                    "FABRICATION-ITEM": true,
+                    "PIPING-SPEC": "SIS",
+                    "TRACING-SPEC": true,
+                    "COMPONENT-ATTRIBUTE1": "BOMCOLUMN_Material_",
+                    "COMPONENT-ATTRIBUTE2": "BOMCOLUMN_SCHClass_40",
+                    "WEIGHT": "3.17517917082464"
+                }
+            },
+            "engineering": {
+                "angleDegrees": null,
+                "boreProfile": {
+                    "endPoints": [
+                        3,
+                        3
+                    ],
+                    "branchPoints": [
+                        2.5
+                    ],
+                    "unique": [
+                        3,
+                        2.5
+                    ]
+                },
+                "connectionTypes": [
+                    "BW"
+                ],
+                "classCode": "40",
+                "scheduleHint": "40",
+                "pressureClassHint": null,
+                "isReducing": true,
+                "isBranching": true
+            },
+            "geometry": {
+                "endPoints": [
+                    {
+                        "index": 0,
+                        "role": "end-point",
+                        "x": 0,
+                        "y": -849.5968,
+                        "z": 478.9369,
+                        "bore": 3,
+                        "connectionType": "BW",
+                        "topology": {
+                            "connectedComponentId": "548",
+                            "connectedEndpoint": 1,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    },
+                    {
+                        "index": 1,
+                        "role": "end-point",
+                        "x": 0,
+                        "y": -1021.3008,
+                        "z": 478.9369,
+                        "bore": 3,
+                        "connectionType": "BW",
+                        "topology": {
+                            "connectedComponentId": "496",
+                            "connectedEndpoint": 0,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "centrePoint": {
+                    "x": 0,
+                    "y": -935.4488,
+                    "z": 478.9369
+                },
+                "branchPoints": [
+                    {
+                        "index": 0,
+                        "role": "BRANCH1-POINT",
+                        "x": -0,
+                        "y": -935.4488,
+                        "z": 561.4869,
+                        "bore": 2.5,
+                        "connectionType": "BW",
+                        "topology": {
+                            "connectedComponentId": null,
+                            "connectedEndpoint": null,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "auxiliaryPoints": []
+            },
+            "catalogResolution": {
+                "status": "unresolved",
+                "strategy": "e3d-catalog-resolver",
+                "legacyCandidateSpref": "/SIS/TR80X65",
+                "resolvedSpref": null,
+                "resolvedBy": null
+            }
+        },
+        {
+            "id": "548",
+            "branchId": "2",
+            "source": {
+                "pcfLine": 549,
+                "pipelineReference": "0001",
+                "type": "PIPE",
+                "itemCode": "PA80",
+                "itemDescription": "PIPE, SEAMLESS, 40, PE, ASTM A106",
+                "pipingSpec": "SIS",
+                "skey": "",
+                "tag": "",
+                "rawAttributes": {
+                    "END-POINT": [
+                        "0.0000    -98.5520    478.9369    3.0000",
+                        "0.0000    -849.5968    478.9369    3.0000"
+                    ],
+                    "ITEM-CODE": "PA80",
+                    "ITEM-DESCRIPTION": "PIPE, SEAMLESS, 40, PE, ASTM A106",
+                    "FABRICATION-ITEM": true,
+                    "PIPING-SPEC": "SIS",
+                    "TRACING-SPEC": true,
+                    "COMPONENT-ATTRIBUTE1": "BOMCOLUMN_Material_",
+                    "COMPONENT-ATTRIBUTE2": "BOMCOLUMN_SCHClass_40",
+                    "WEIGHT": "11.2802612718861"
+                }
+            },
+            "engineering": {
+                "angleDegrees": null,
+                "boreProfile": {
+                    "endPoints": [
+                        3,
+                        3
+                    ],
+                    "branchPoints": [],
+                    "unique": [
+                        3
+                    ]
+                },
+                "connectionTypes": [],
+                "classCode": "40",
+                "scheduleHint": "40",
+                "pressureClassHint": null,
+                "isReducing": false,
+                "isBranching": false
+            },
+            "geometry": {
+                "endPoints": [
+                    {
+                        "index": 0,
+                        "role": "end-point",
+                        "x": 0,
+                        "y": -98.552,
+                        "z": 478.9369,
+                        "bore": 3,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": null,
+                            "connectedEndpoint": null,
+                            "extremity": "H",
+                            "connectionRole": "HEAD",
+                            "branchOriginComponentId": "588",
+                            "branchOriginPpoint": 3
+                        }
+                    },
+                    {
+                        "index": 1,
+                        "role": "end-point",
+                        "x": 0,
+                        "y": -849.5968,
+                        "z": 478.9369,
+                        "bore": 3,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": "516",
+                            "connectedEndpoint": 0,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "centrePoint": null,
+                "branchPoints": [],
+                "auxiliaryPoints": []
+            },
+            "catalogResolution": {
+                "status": "unresolved",
+                "strategy": "e3d-catalog-resolver",
+                "legacyCandidateSpref": "/SIS/PA80",
+                "resolvedSpref": null,
+                "resolvedBy": null
+            }
+        },
+        {
+            "id": "568",
+            "branchId": "1",
+            "source": {
+                "pcfLine": 569,
+                "pipelineReference": "0001",
+                "type": "PIPE",
+                "itemCode": "PA100",
+                "itemDescription": "PIPE, SEAMLESS, 40, PE, ASTM A106",
+                "pipingSpec": "SIS",
+                "skey": "",
+                "tag": "",
+                "rawAttributes": {
+                    "END-POINT": [
+                        "0.0000    0.0000    0.0000    4.0000",
+                        "0.0000    0.0000    374.2889    4.0000"
+                    ],
+                    "ITEM-CODE": "PA100",
+                    "ITEM-DESCRIPTION": "PIPE, SEAMLESS, 40, PE, ASTM A106",
+                    "FABRICATION-ITEM": true,
+                    "PIPING-SPEC": "SIS",
+                    "TRACING-SPEC": true,
+                    "COMPONENT-ATTRIBUTE1": "BOMCOLUMN_Material_",
+                    "COMPONENT-ATTRIBUTE2": "BOMCOLUMN_SCHClass_40",
+                    "WEIGHT": "16.0721400707611"
+                }
+            },
+            "engineering": {
+                "angleDegrees": null,
+                "boreProfile": {
+                    "endPoints": [
+                        4,
+                        4
+                    ],
+                    "branchPoints": [],
+                    "unique": [
+                        4
+                    ]
+                },
+                "connectionTypes": [],
+                "classCode": "40",
+                "scheduleHint": "40",
+                "pressureClassHint": null,
+                "isReducing": false,
+                "isBranching": false
+            },
+            "geometry": {
+                "endPoints": [
+                    {
+                        "index": 0,
+                        "role": "end-point",
+                        "x": 0,
+                        "y": 0,
+                        "z": 0,
+                        "bore": 4,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": null,
+                            "connectedEndpoint": null,
+                            "extremity": "H",
+                            "connectionRole": "HEAD",
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    },
+                    {
+                        "index": 1,
+                        "role": "end-point",
+                        "x": 0,
+                        "y": 0,
+                        "z": 374.2889,
+                        "bore": 4,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": "588",
+                            "connectedEndpoint": 0,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "centrePoint": null,
+                "branchPoints": [],
+                "auxiliaryPoints": []
+            },
+            "catalogResolution": {
+                "status": "unresolved",
+                "strategy": "e3d-catalog-resolver",
+                "legacyCandidateSpref": "/SIS/PA100",
+                "resolvedSpref": null,
+                "resolvedBy": null
+            }
+        },
+        {
+            "id": "588",
+            "branchId": "1",
+            "source": {
+                "pcfLine": 589,
+                "pipelineReference": "0001",
+                "type": "TEE",
+                "itemCode": "TR100X80",
+                "itemDescription": "TEE (RED), SCH 40, BW, ASME B16.9",
+                "pipingSpec": "SIS",
+                "skey": "TEBW",
+                "tag": "",
+                "rawAttributes": {
+                    "END-POINT": [
+                        "0.0000    0.0000    374.2889    4.0000  BW",
+                        "0.0000    0.0000    583.5849    4.0000  BW"
+                    ],
+                    "CENTRE-POINT": "0.0000    0.0000    478.9369",
+                    "BRANCH1-POINT": "0.0000    -98.5520    478.9369    3.0000  BW",
+                    "SKEY": "TEBW",
+                    "ITEM-CODE": "TR100X80",
+                    "ITEM-DESCRIPTION": "TEE (RED), SCH 40, BW, ASME B16.9",
+                    "FABRICATION-ITEM": true,
+                    "PIPING-SPEC": "SIS",
+                    "TRACING-SPEC": true,
+                    "COMPONENT-ATTRIBUTE1": "BOMCOLUMN_Material_",
+                    "COMPONENT-ATTRIBUTE2": "BOMCOLUMN_SCHClass_40",
+                    "WEIGHT": "5.21636578064048"
+                }
+            },
+            "engineering": {
+                "angleDegrees": null,
+                "boreProfile": {
+                    "endPoints": [
+                        4,
+                        4
+                    ],
+                    "branchPoints": [
+                        3
+                    ],
+                    "unique": [
+                        4,
+                        3
+                    ]
+                },
+                "connectionTypes": [
+                    "BW"
+                ],
+                "classCode": "40",
+                "scheduleHint": "40",
+                "pressureClassHint": null,
+                "isReducing": true,
+                "isBranching": true
+            },
+            "geometry": {
+                "endPoints": [
+                    {
+                        "index": 0,
+                        "role": "end-point",
+                        "x": 0,
+                        "y": 0,
+                        "z": 374.2889,
+                        "bore": 4,
+                        "connectionType": "BW",
+                        "topology": {
+                            "connectedComponentId": "568",
+                            "connectedEndpoint": 1,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    },
+                    {
+                        "index": 1,
+                        "role": "end-point",
+                        "x": 0,
+                        "y": 0,
+                        "z": 583.5849,
+                        "bore": 4,
+                        "connectionType": "BW",
+                        "topology": {
+                            "connectedComponentId": "602",
+                            "connectedEndpoint": 0,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "centrePoint": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 478.9369
+                },
+                "branchPoints": [
+                    {
+                        "index": 0,
+                        "role": "BRANCH1-POINT",
+                        "x": 0,
+                        "y": -98.552,
+                        "z": 478.9369,
+                        "bore": 3,
+                        "connectionType": "BW",
+                        "topology": {
+                            "connectedComponentId": null,
+                            "connectedEndpoint": null,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "auxiliaryPoints": []
+            },
+            "catalogResolution": {
+                "status": "unresolved",
+                "strategy": "e3d-catalog-resolver",
+                "legacyCandidateSpref": "/SIS/TR100X80",
+                "resolvedSpref": null,
+                "resolvedBy": null
+            }
+        },
+        {
+            "id": "602",
+            "branchId": "1",
+            "source": {
+                "pcfLine": 603,
+                "pipelineReference": "0001",
+                "type": "PIPE",
+                "itemCode": "PA100",
+                "itemDescription": "PIPE, SEAMLESS, 40, PE, ASTM A106",
+                "pipingSpec": "SIS",
+                "skey": "",
+                "tag": "",
+                "rawAttributes": {
+                    "END-POINT": [
+                        "0.0000    0.0000    583.5849    4.0000",
+                        "0.0000    0.0000    898.4000    4.0000"
+                    ],
+                    "ITEM-CODE": "PA100",
+                    "ITEM-DESCRIPTION": "PIPE, SEAMLESS, 40, PE, ASTM A106",
+                    "FABRICATION-ITEM": true,
+                    "PIPING-SPEC": "SIS",
+                    "TRACING-SPEC": true,
+                    "COMPONENT-ATTRIBUTE1": "BOMCOLUMN_Material_",
+                    "COMPONENT-ATTRIBUTE2": "BOMCOLUMN_SCHClass_40",
+                    "WEIGHT": "16.0721400707611"
+                }
+            },
+            "engineering": {
+                "angleDegrees": null,
+                "boreProfile": {
+                    "endPoints": [
+                        4,
+                        4
+                    ],
+                    "branchPoints": [],
+                    "unique": [
+                        4
+                    ]
+                },
+                "connectionTypes": [],
+                "classCode": "40",
+                "scheduleHint": "40",
+                "pressureClassHint": null,
+                "isReducing": false,
+                "isBranching": false
+            },
+            "geometry": {
+                "endPoints": [
+                    {
+                        "index": 0,
+                        "role": "end-point",
+                        "x": 0,
+                        "y": 0,
+                        "z": 583.5849,
+                        "bore": 4,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": "588",
+                            "connectedEndpoint": 1,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    },
+                    {
+                        "index": 1,
+                        "role": "end-point",
+                        "x": 0,
+                        "y": 0,
+                        "z": 898.4,
+                        "bore": 4,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": "631",
+                            "connectedEndpoint": 0,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "centrePoint": null,
+                "branchPoints": [],
+                "auxiliaryPoints": []
+            },
+            "catalogResolution": {
+                "status": "unresolved",
+                "strategy": "e3d-catalog-resolver",
+                "legacyCandidateSpref": "/SIS/PA100",
+                "resolvedSpref": null,
+                "resolvedBy": null
+            }
+        },
+        {
+            "id": "631",
+            "branchId": "1",
+            "source": {
+                "pcfLine": 632,
+                "pipelineReference": "0001",
+                "type": "ELBOW",
+                "itemCode": "EA100",
+                "itemDescription": "ELL 90 SR, BW, ASME B16.9",
+                "pipingSpec": "SIS",
+                "skey": "ELBW",
+                "tag": "",
+                "rawAttributes": {
+                    "END-POINT": [
+                        "0.0000    0.0000    898.4000    4.0000  BW",
+                        "0.0000    101.6000    1000.0000    4.0000  BW"
+                    ],
+                    "CENTRE-POINT": "0.0000    0.0000    1000.0000",
+                    "SKEY": "ELBW",
+                    "ITEM-CODE": "EA100",
+                    "ITEM-DESCRIPTION": "ELL 90 SR, BW, ASME B16.9",
+                    "FABRICATION-ITEM": true,
+                    "ANGLE": "9000",
+                    "PIPING-SPEC": "SIS",
+                    "TRACING-SPEC": true,
+                    "COMPONENT-ATTRIBUTE1": "BOMCOLUMN_Material_",
+                    "COMPONENT-ATTRIBUTE2": "BOMCOLUMN_SCHClass_",
+                    "WEIGHT": "2.834981402522"
+                }
+            },
+            "engineering": {
+                "angleDegrees": 90,
+                "boreProfile": {
+                    "endPoints": [
+                        4,
+                        4
+                    ],
+                    "branchPoints": [],
+                    "unique": [
+                        4
+                    ]
+                },
+                "connectionTypes": [
+                    "BW"
+                ],
+                "classCode": null,
+                "scheduleHint": null,
+                "pressureClassHint": null,
+                "isReducing": false,
+                "isBranching": false
+            },
+            "geometry": {
+                "endPoints": [
+                    {
+                        "index": 0,
+                        "role": "end-point",
+                        "x": 0,
+                        "y": 0,
+                        "z": 898.4,
+                        "bore": 4,
+                        "connectionType": "BW",
+                        "topology": {
+                            "connectedComponentId": "602",
+                            "connectedEndpoint": 1,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    },
+                    {
+                        "index": 1,
+                        "role": "end-point",
+                        "x": 0,
+                        "y": 101.6,
+                        "z": 1000,
+                        "bore": 4,
+                        "connectionType": "BW",
+                        "topology": {
+                            "connectedComponentId": "688",
+                            "connectedEndpoint": 0,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "centrePoint": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 1000
+                },
+                "branchPoints": [],
+                "auxiliaryPoints": []
+            },
+            "catalogResolution": {
+                "status": "unresolved",
+                "strategy": "e3d-catalog-resolver",
+                "legacyCandidateSpref": "/SIS/EA100",
+                "resolvedSpref": null,
+                "resolvedBy": null
+            }
+        },
+        {
+            "id": "645",
+            "branchId": "6",
+            "source": {
+                "pcfLine": 646,
+                "pipelineReference": "0001",
+                "type": "ELBOW",
+                "itemCode": "EA100",
+                "itemDescription": "ELL 90 SR, BW, ASME B16.9",
+                "pipingSpec": "SIS",
+                "skey": "ELBW",
+                "tag": "",
+                "rawAttributes": {
+                    "END-POINT": [
+                        "0.0000    103.1161    1752.2176    4.0000  BW",
+                        "0.0000    1.5161    1853.8176    4.0000  BW"
+                    ],
+                    "CENTRE-POINT": "0.0000    1.5161    1752.2176",
+                    "SKEY": "ELBW",
+                    "ITEM-CODE": "EA100",
+                    "ITEM-DESCRIPTION": "ELL 90 SR, BW, ASME B16.9",
+                    "FABRICATION-ITEM": true,
+                    "ANGLE": "9000",
+                    "PIPING-SPEC": "SIS",
+                    "TRACING-SPEC": true,
+                    "COMPONENT-ATTRIBUTE1": "BOMCOLUMN_Material_",
+                    "COMPONENT-ATTRIBUTE2": "BOMCOLUMN_SCHClass_",
+                    "WEIGHT": "2.834981402522"
+                }
+            },
+            "engineering": {
+                "angleDegrees": 90,
+                "boreProfile": {
+                    "endPoints": [
+                        4,
+                        4
+                    ],
+                    "branchPoints": [],
+                    "unique": [
+                        4
+                    ]
+                },
+                "connectionTypes": [
+                    "BW"
+                ],
+                "classCode": null,
+                "scheduleHint": null,
+                "pressureClassHint": null,
+                "isReducing": false,
+                "isBranching": false
+            },
+            "geometry": {
+                "endPoints": [
+                    {
+                        "index": 0,
+                        "role": "end-point",
+                        "x": 0,
+                        "y": 103.1161,
+                        "z": 1752.2176,
+                        "bore": 4,
+                        "connectionType": "BW",
+                        "topology": {
+                            "connectedComponentId": "699",
+                            "connectedEndpoint": 1,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    },
+                    {
+                        "index": 1,
+                        "role": "end-point",
+                        "x": 0,
+                        "y": 1.5161,
+                        "z": 1853.8176,
+                        "bore": 4,
+                        "connectionType": "BW",
+                        "topology": {
+                            "connectedComponentId": "668",
+                            "connectedEndpoint": 0,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "centrePoint": {
+                    "x": 0,
+                    "y": 1.5161,
+                    "z": 1752.2176
+                },
+                "branchPoints": [],
+                "auxiliaryPoints": []
+            },
+            "catalogResolution": {
+                "status": "unresolved",
+                "strategy": "e3d-catalog-resolver",
+                "legacyCandidateSpref": "/SIS/EA100",
+                "resolvedSpref": null,
+                "resolvedBy": null
+            }
+        },
+        {
+            "id": "668",
+            "branchId": "6",
+            "source": {
+                "pcfLine": 669,
+                "pipelineReference": "0001",
+                "type": "PIPE",
+                "itemCode": "PA100",
+                "itemDescription": "PIPE, SEAMLESS, 40, PE, ASTM A106",
+                "pipingSpec": "SIS",
+                "skey": "",
+                "tag": "",
+                "rawAttributes": {
+                    "END-POINT": [
+                        "0.0000    1.5161    1853.8176    4.0000",
+                        "0.0000    1.5161    2477.1978    4.0000"
+                    ],
+                    "ITEM-CODE": "PA100",
+                    "ITEM-DESCRIPTION": "PIPE, SEAMLESS, 40, PE, ASTM A106",
+                    "FABRICATION-ITEM": true,
+                    "PIPING-SPEC": "SIS",
+                    "TRACING-SPEC": true,
+                    "COMPONENT-ATTRIBUTE1": "BOMCOLUMN_Material_",
+                    "COMPONENT-ATTRIBUTE2": "BOMCOLUMN_SCHClass_40",
+                    "WEIGHT": "16.0721400707611"
+                }
+            },
+            "engineering": {
+                "angleDegrees": null,
+                "boreProfile": {
+                    "endPoints": [
+                        4,
+                        4
+                    ],
+                    "branchPoints": [],
+                    "unique": [
+                        4
+                    ]
+                },
+                "connectionTypes": [],
+                "classCode": "40",
+                "scheduleHint": "40",
+                "pressureClassHint": null,
+                "isReducing": false,
+                "isBranching": false
+            },
+            "geometry": {
+                "endPoints": [
+                    {
+                        "index": 0,
+                        "role": "end-point",
+                        "x": 0,
+                        "y": 1.5161,
+                        "z": 1853.8176,
+                        "bore": 4,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": "645",
+                            "connectedEndpoint": 1,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    },
+                    {
+                        "index": 1,
+                        "role": "end-point",
+                        "x": 0,
+                        "y": 1.5161,
+                        "z": 2477.1978,
+                        "bore": 4,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": null,
+                            "connectedEndpoint": null,
+                            "extremity": "T",
+                            "connectionRole": "TAIL",
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "centrePoint": null,
+                "branchPoints": [],
+                "auxiliaryPoints": []
+            },
+            "catalogResolution": {
+                "status": "unresolved",
+                "strategy": "e3d-catalog-resolver",
+                "legacyCandidateSpref": "/SIS/PA100",
+                "resolvedSpref": null,
+                "resolvedBy": null
+            }
+        },
+        {
+            "id": "688",
+            "branchId": "1",
+            "source": {
+                "pcfLine": 689,
+                "pipelineReference": "0001",
+                "type": "PIPE",
+                "itemCode": "PA100",
+                "itemDescription": "PIPE, SEAMLESS, 40, PE, ASTM A106",
+                "pipingSpec": "SIS",
+                "skey": "",
+                "tag": "",
+                "rawAttributes": {
+                    "END-POINT": [
+                        "0.0000    101.6000    1000.0000    4.0000",
+                        "0.0000    645.3520    1000.0000    4.0000"
+                    ],
+                    "ITEM-CODE": "PA100",
+                    "ITEM-DESCRIPTION": "PIPE, SEAMLESS, 40, PE, ASTM A106",
+                    "FABRICATION-ITEM": true,
+                    "PIPING-SPEC": "SIS",
+                    "TRACING-SPEC": true,
+                    "COMPONENT-ATTRIBUTE1": "BOMCOLUMN_Material_",
+                    "COMPONENT-ATTRIBUTE2": "BOMCOLUMN_SCHClass_40",
+                    "WEIGHT": "16.0721400707611"
+                }
+            },
+            "engineering": {
+                "angleDegrees": null,
+                "boreProfile": {
+                    "endPoints": [
+                        4,
+                        4
+                    ],
+                    "branchPoints": [],
+                    "unique": [
+                        4
+                    ]
+                },
+                "connectionTypes": [],
+                "classCode": "40",
+                "scheduleHint": "40",
+                "pressureClassHint": null,
+                "isReducing": false,
+                "isBranching": false
+            },
+            "geometry": {
+                "endPoints": [
+                    {
+                        "index": 0,
+                        "role": "end-point",
+                        "x": 0,
+                        "y": 101.6,
+                        "z": 1000,
+                        "bore": 4,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": "631",
+                            "connectedEndpoint": 1,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    },
+                    {
+                        "index": 1,
+                        "role": "end-point",
+                        "x": 0,
+                        "y": 645.352,
+                        "z": 1000,
+                        "bore": 4,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": "728",
+                            "connectedEndpoint": 0,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "centrePoint": null,
+                "branchPoints": [],
+                "auxiliaryPoints": []
+            },
+            "catalogResolution": {
+                "status": "unresolved",
+                "strategy": "e3d-catalog-resolver",
+                "legacyCandidateSpref": "/SIS/PA100",
+                "resolvedSpref": null,
+                "resolvedBy": null
+            }
+        },
+        {
+            "id": "699",
+            "branchId": "6",
+            "source": {
+                "pcfLine": 700,
+                "pipelineReference": "0001",
+                "type": "PIPE",
+                "itemCode": "PA100",
+                "itemDescription": "PIPE, SEAMLESS, 40, PE, ASTM A106",
+                "pipingSpec": "SIS",
+                "skey": "",
+                "tag": "",
+                "rawAttributes": {
+                    "END-POINT": [
+                        "0.0000    648.4000    1752.2176    4.0000",
+                        "0.0000    103.1161    1752.2176    4.0000"
+                    ],
+                    "ITEM-CODE": "PA100",
+                    "ITEM-DESCRIPTION": "PIPE, SEAMLESS, 40, PE, ASTM A106",
+                    "FABRICATION-ITEM": true,
+                    "PIPING-SPEC": "SIS",
+                    "TRACING-SPEC": true,
+                    "COMPONENT-ATTRIBUTE1": "BOMCOLUMN_Material_",
+                    "COMPONENT-ATTRIBUTE2": "BOMCOLUMN_SCHClass_40",
+                    "WEIGHT": "16.0721400707611"
+                }
+            },
+            "engineering": {
+                "angleDegrees": null,
+                "boreProfile": {
+                    "endPoints": [
+                        4,
+                        4
+                    ],
+                    "branchPoints": [],
+                    "unique": [
+                        4
+                    ]
+                },
+                "connectionTypes": [],
+                "classCode": "40",
+                "scheduleHint": "40",
+                "pressureClassHint": null,
+                "isReducing": false,
+                "isBranching": false
+            },
+            "geometry": {
+                "endPoints": [
+                    {
+                        "index": 0,
+                        "role": "end-point",
+                        "x": 0,
+                        "y": 648.4,
+                        "z": 1752.2176,
+                        "bore": 4,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": "742",
+                            "connectedEndpoint": 1,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    },
+                    {
+                        "index": 1,
+                        "role": "end-point",
+                        "x": 0,
+                        "y": 103.1161,
+                        "z": 1752.2176,
+                        "bore": 4,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": "645",
+                            "connectedEndpoint": 0,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "centrePoint": null,
+                "branchPoints": [],
+                "auxiliaryPoints": []
+            },
+            "catalogResolution": {
+                "status": "unresolved",
+                "strategy": "e3d-catalog-resolver",
+                "legacyCandidateSpref": "/SIS/PA100",
+                "resolvedSpref": null,
+                "resolvedBy": null
+            }
+        },
+        {
+            "id": "728",
+            "branchId": "1",
+            "source": {
+                "pcfLine": 729,
+                "pipelineReference": "0001",
+                "type": "TEE",
+                "itemCode": "TE100",
+                "itemDescription": "TEE, SCH 40, BW, ASME B16.9",
+                "pipingSpec": "SIS",
+                "skey": "TEBW",
+                "tag": "",
+                "rawAttributes": {
+                    "END-POINT": [
+                        "0.0000    645.3520    1000.0000    4.0000  BW",
+                        "0.0000    854.6480    1000.0000    4.0000  BW"
+                    ],
+                    "CENTRE-POINT": "0.0000    750.0000    1000.0000",
+                    "BRANCH1-POINT": "0.0000    750.0000    1104.6480    4.0000  BW",
+                    "SKEY": "TEBW",
+                    "ITEM-CODE": "TE100",
+                    "ITEM-DESCRIPTION": "TEE, SCH 40, BW, ASME B16.9",
+                    "FABRICATION-ITEM": true,
+                    "PIPING-SPEC": "SIS",
+                    "TRACING-SPEC": true,
+                    "COMPONENT-ATTRIBUTE1": "BOMCOLUMN_Material_",
+                    "COMPONENT-ATTRIBUTE2": "BOMCOLUMN_SCHClass_40",
+                    "WEIGHT": "5.89676131724576"
+                }
+            },
+            "engineering": {
+                "angleDegrees": null,
+                "boreProfile": {
+                    "endPoints": [
+                        4,
+                        4
+                    ],
+                    "branchPoints": [
+                        4
+                    ],
+                    "unique": [
+                        4
+                    ]
+                },
+                "connectionTypes": [
+                    "BW"
+                ],
+                "classCode": "40",
+                "scheduleHint": "40",
+                "pressureClassHint": null,
+                "isReducing": false,
+                "isBranching": true
+            },
+            "geometry": {
+                "endPoints": [
+                    {
+                        "index": 0,
+                        "role": "end-point",
+                        "x": 0,
+                        "y": 645.352,
+                        "z": 1000,
+                        "bore": 4,
+                        "connectionType": "BW",
+                        "topology": {
+                            "connectedComponentId": "688",
+                            "connectedEndpoint": 1,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    },
+                    {
+                        "index": 1,
+                        "role": "end-point",
+                        "x": 0,
+                        "y": 854.648,
+                        "z": 1000,
+                        "bore": 4,
+                        "connectionType": "BW",
+                        "topology": {
+                            "connectedComponentId": "794",
+                            "connectedEndpoint": 0,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "centrePoint": {
+                    "x": 0,
+                    "y": 750,
+                    "z": 1000
+                },
+                "branchPoints": [
+                    {
+                        "index": 0,
+                        "role": "BRANCH1-POINT",
+                        "x": 0,
+                        "y": 750,
+                        "z": 1104.648,
+                        "bore": 4,
+                        "connectionType": "BW",
+                        "topology": {
+                            "connectedComponentId": null,
+                            "connectedEndpoint": null,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "auxiliaryPoints": []
+            },
+            "catalogResolution": {
+                "status": "unresolved",
+                "strategy": "e3d-catalog-resolver",
+                "legacyCandidateSpref": "/SIS/TE100",
+                "resolvedSpref": null,
+                "resolvedBy": null
+            }
+        },
+        {
+            "id": "742",
+            "branchId": "6",
+            "source": {
+                "pcfLine": 743,
+                "pipelineReference": "0001",
+                "type": "ELBOW",
+                "itemCode": "EA100",
+                "itemDescription": "ELL 90 SR, BW, ASME B16.9",
+                "pipingSpec": "SIS",
+                "skey": "ELBW",
+                "tag": "",
+                "rawAttributes": {
+                    "END-POINT": [
+                        "0.0000    750.0000    1650.6176    4.0000  BW",
+                        "0.0000    648.4000    1752.2176    4.0000  BW"
+                    ],
+                    "CENTRE-POINT": "0.0000    750.0000    1752.2176",
+                    "SKEY": "ELBW",
+                    "ITEM-CODE": "EA100",
+                    "ITEM-DESCRIPTION": "ELL 90 SR, BW, ASME B16.9",
+                    "FABRICATION-ITEM": true,
+                    "ANGLE": "9000",
+                    "PIPING-SPEC": "SIS",
+                    "TRACING-SPEC": true,
+                    "COMPONENT-ATTRIBUTE1": "BOMCOLUMN_Material_",
+                    "COMPONENT-ATTRIBUTE2": "BOMCOLUMN_SCHClass_",
+                    "WEIGHT": "2.834981402522"
+                }
+            },
+            "engineering": {
+                "angleDegrees": 90,
+                "boreProfile": {
+                    "endPoints": [
+                        4,
+                        4
+                    ],
+                    "branchPoints": [],
+                    "unique": [
+                        4
+                    ]
+                },
+                "connectionTypes": [
+                    "BW"
+                ],
+                "classCode": null,
+                "scheduleHint": null,
+                "pressureClassHint": null,
+                "isReducing": false,
+                "isBranching": false
+            },
+            "geometry": {
+                "endPoints": [
+                    {
+                        "index": 0,
+                        "role": "end-point",
+                        "x": 0,
+                        "y": 750,
+                        "z": 1650.6176,
+                        "bore": 4,
+                        "connectionType": "BW",
+                        "topology": {
+                            "connectedComponentId": "774",
+                            "connectedEndpoint": 0,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    },
+                    {
+                        "index": 1,
+                        "role": "end-point",
+                        "x": 0,
+                        "y": 648.4,
+                        "z": 1752.2176,
+                        "bore": 4,
+                        "connectionType": "BW",
+                        "topology": {
+                            "connectedComponentId": "699",
+                            "connectedEndpoint": 0,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "centrePoint": {
+                    "x": 0,
+                    "y": 750,
+                    "z": 1752.2176
+                },
+                "branchPoints": [],
+                "auxiliaryPoints": []
+            },
+            "catalogResolution": {
+                "status": "unresolved",
+                "strategy": "e3d-catalog-resolver",
+                "legacyCandidateSpref": "/SIS/EA100",
+                "resolvedSpref": null,
+                "resolvedBy": null
+            }
+        },
+        {
+            "id": "774",
+            "branchId": "6",
+            "source": {
+                "pcfLine": 775,
+                "pipelineReference": "0001",
+                "type": "PIPE",
+                "itemCode": "PA100",
+                "itemDescription": "PIPE, SEAMLESS, 40, PE, ASTM A106",
+                "pipingSpec": "SIS",
+                "skey": "",
+                "tag": "",
+                "rawAttributes": {
+                    "END-POINT": [
+                        "0.0000    750.0000    1650.6176    4.0000",
+                        "0.0000    750.0000    1104.6480    4.0000"
+                    ],
+                    "ITEM-CODE": "PA100",
+                    "ITEM-DESCRIPTION": "PIPE, SEAMLESS, 40, PE, ASTM A106",
+                    "FABRICATION-ITEM": true,
+                    "PIPING-SPEC": "SIS",
+                    "TRACING-SPEC": true,
+                    "COMPONENT-ATTRIBUTE1": "BOMCOLUMN_Material_",
+                    "COMPONENT-ATTRIBUTE2": "BOMCOLUMN_SCHClass_40",
+                    "WEIGHT": "16.0721400707611"
+                }
+            },
+            "engineering": {
+                "angleDegrees": null,
+                "boreProfile": {
+                    "endPoints": [
+                        4,
+                        4
+                    ],
+                    "branchPoints": [],
+                    "unique": [
+                        4
+                    ]
+                },
+                "connectionTypes": [],
+                "classCode": "40",
+                "scheduleHint": "40",
+                "pressureClassHint": null,
+                "isReducing": false,
+                "isBranching": false
+            },
+            "geometry": {
+                "endPoints": [
+                    {
+                        "index": 0,
+                        "role": "end-point",
+                        "x": 0,
+                        "y": 750,
+                        "z": 1650.6176,
+                        "bore": 4,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": "742",
+                            "connectedEndpoint": 0,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    },
+                    {
+                        "index": 1,
+                        "role": "end-point",
+                        "x": 0,
+                        "y": 750,
+                        "z": 1104.648,
+                        "bore": 4,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": null,
+                            "connectedEndpoint": null,
+                            "extremity": "H",
+                            "connectionRole": "HEAD",
+                            "branchOriginComponentId": "728",
+                            "branchOriginPpoint": 3
+                        }
+                    }
+                ],
+                "centrePoint": null,
+                "branchPoints": [],
+                "auxiliaryPoints": []
+            },
+            "catalogResolution": {
+                "status": "unresolved",
+                "strategy": "e3d-catalog-resolver",
+                "legacyCandidateSpref": "/SIS/PA100",
+                "resolvedSpref": null,
+                "resolvedBy": null
+            }
+        },
+        {
+            "id": "794",
+            "branchId": "1",
+            "source": {
+                "pcfLine": 795,
+                "pipelineReference": "0001",
+                "type": "PIPE",
+                "itemCode": "PA100",
+                "itemDescription": "PIPE, SEAMLESS, 40, PE, ASTM A106",
+                "pipingSpec": "SIS",
+                "skey": "",
+                "tag": "",
+                "rawAttributes": {
+                    "END-POINT": [
+                        "0.0000    854.6480    1000.0000    4.0000",
+                        "0.0000    1398.4000    1000.0000    4.0000"
+                    ],
+                    "ITEM-CODE": "PA100",
+                    "ITEM-DESCRIPTION": "PIPE, SEAMLESS, 40, PE, ASTM A106",
+                    "FABRICATION-ITEM": true,
+                    "PIPING-SPEC": "SIS",
+                    "TRACING-SPEC": true,
+                    "COMPONENT-ATTRIBUTE1": "BOMCOLUMN_Material_",
+                    "COMPONENT-ATTRIBUTE2": "BOMCOLUMN_SCHClass_40",
+                    "WEIGHT": "16.0721400707611"
+                }
+            },
+            "engineering": {
+                "angleDegrees": null,
+                "boreProfile": {
+                    "endPoints": [
+                        4,
+                        4
+                    ],
+                    "branchPoints": [],
+                    "unique": [
+                        4
+                    ]
+                },
+                "connectionTypes": [],
+                "classCode": "40",
+                "scheduleHint": "40",
+                "pressureClassHint": null,
+                "isReducing": false,
+                "isBranching": false
+            },
+            "geometry": {
+                "endPoints": [
+                    {
+                        "index": 0,
+                        "role": "end-point",
+                        "x": 0,
+                        "y": 854.648,
+                        "z": 1000,
+                        "bore": 4,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": "728",
+                            "connectedEndpoint": 1,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    },
+                    {
+                        "index": 1,
+                        "role": "end-point",
+                        "x": 0,
+                        "y": 1398.4,
+                        "z": 1000,
+                        "bore": 4,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": "823",
+                            "connectedEndpoint": 0,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "centrePoint": null,
+                "branchPoints": [],
+                "auxiliaryPoints": []
+            },
+            "catalogResolution": {
+                "status": "unresolved",
+                "strategy": "e3d-catalog-resolver",
+                "legacyCandidateSpref": "/SIS/PA100",
+                "resolvedSpref": null,
+                "resolvedBy": null
+            }
+        },
+        {
+            "id": "823",
+            "branchId": "1",
+            "source": {
+                "pcfLine": 824,
+                "pipelineReference": "0001",
+                "type": "ELBOW",
+                "itemCode": "EA100",
+                "itemDescription": "ELL 90 SR, BW, ASME B16.9",
+                "pipingSpec": "SIS",
+                "skey": "ELBW",
+                "tag": "",
+                "rawAttributes": {
+                    "END-POINT": [
+                        "0.0000    1398.4000    1000.0000    4.0000  BW",
+                        "0.0000    1500.0000    1101.6000    4.0000  BW"
+                    ],
+                    "CENTRE-POINT": "0.0000    1500.0000    1000.0000",
+                    "SKEY": "ELBW",
+                    "ITEM-CODE": "EA100",
+                    "ITEM-DESCRIPTION": "ELL 90 SR, BW, ASME B16.9",
+                    "FABRICATION-ITEM": true,
+                    "ANGLE": "9000",
+                    "PIPING-SPEC": "SIS",
+                    "TRACING-SPEC": true,
+                    "COMPONENT-ATTRIBUTE1": "BOMCOLUMN_Material_",
+                    "COMPONENT-ATTRIBUTE2": "BOMCOLUMN_SCHClass_",
+                    "WEIGHT": "2.834981402522"
+                }
+            },
+            "engineering": {
+                "angleDegrees": 90,
+                "boreProfile": {
+                    "endPoints": [
+                        4,
+                        4
+                    ],
+                    "branchPoints": [],
+                    "unique": [
+                        4
+                    ]
+                },
+                "connectionTypes": [
+                    "BW"
+                ],
+                "classCode": null,
+                "scheduleHint": null,
+                "pressureClassHint": null,
+                "isReducing": false,
+                "isBranching": false
+            },
+            "geometry": {
+                "endPoints": [
+                    {
+                        "index": 0,
+                        "role": "end-point",
+                        "x": 0,
+                        "y": 1398.4,
+                        "z": 1000,
+                        "bore": 4,
+                        "connectionType": "BW",
+                        "topology": {
+                            "connectedComponentId": "794",
+                            "connectedEndpoint": 1,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    },
+                    {
+                        "index": 1,
+                        "role": "end-point",
+                        "x": 0,
+                        "y": 1500,
+                        "z": 1101.6,
+                        "bore": 4,
+                        "connectionType": "BW",
+                        "topology": {
+                            "connectedComponentId": "846",
+                            "connectedEndpoint": 0,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "centrePoint": {
+                    "x": 0,
+                    "y": 1500,
+                    "z": 1000
+                },
+                "branchPoints": [],
+                "auxiliaryPoints": []
+            },
+            "catalogResolution": {
+                "status": "unresolved",
+                "strategy": "e3d-catalog-resolver",
+                "legacyCandidateSpref": "/SIS/EA100",
+                "resolvedSpref": null,
+                "resolvedBy": null
+            }
+        },
+        {
+            "id": "846",
+            "branchId": "1",
+            "source": {
+                "pcfLine": 847,
+                "pipelineReference": "0001",
+                "type": "PIPE",
+                "itemCode": "PA100",
+                "itemDescription": "PIPE, SEAMLESS, 40, PE, ASTM A106",
+                "pipingSpec": "SIS",
+                "skey": "",
+                "tag": "",
+                "rawAttributes": {
+                    "END-POINT": [
+                        "0.0000    1500.0000    1101.6000    4.0000",
+                        "0.0000    1500.0000    1936.5004    4.0000"
+                    ],
+                    "ITEM-CODE": "PA100",
+                    "ITEM-DESCRIPTION": "PIPE, SEAMLESS, 40, PE, ASTM A106",
+                    "FABRICATION-ITEM": true,
+                    "PIPING-SPEC": "SIS",
+                    "TRACING-SPEC": true,
+                    "COMPONENT-ATTRIBUTE1": "BOMCOLUMN_Material_",
+                    "COMPONENT-ATTRIBUTE2": "BOMCOLUMN_SCHClass_40",
+                    "WEIGHT": "16.0721400707611"
+                }
+            },
+            "engineering": {
+                "angleDegrees": null,
+                "boreProfile": {
+                    "endPoints": [
+                        4,
+                        4
+                    ],
+                    "branchPoints": [],
+                    "unique": [
+                        4
+                    ]
+                },
+                "connectionTypes": [],
+                "classCode": "40",
+                "scheduleHint": "40",
+                "pressureClassHint": null,
+                "isReducing": false,
+                "isBranching": false
+            },
+            "geometry": {
+                "endPoints": [
+                    {
+                        "index": 0,
+                        "role": "end-point",
+                        "x": 0,
+                        "y": 1500,
+                        "z": 1101.6,
+                        "bore": 4,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": "823",
+                            "connectedEndpoint": 1,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    },
+                    {
+                        "index": 1,
+                        "role": "end-point",
+                        "x": 0,
+                        "y": 1500,
+                        "z": 1936.5004,
+                        "bore": 4,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": "866",
+                            "connectedEndpoint": 0,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "centrePoint": null,
+                "branchPoints": [],
+                "auxiliaryPoints": []
+            },
+            "catalogResolution": {
+                "status": "unresolved",
+                "strategy": "e3d-catalog-resolver",
+                "legacyCandidateSpref": "/SIS/PA100",
+                "resolvedSpref": null,
+                "resolvedBy": null
+            }
+        },
+        {
+            "id": "866",
+            "branchId": "1",
+            "source": {
+                "pcfLine": 867,
+                "pipelineReference": "0001",
+                "type": "ELBOW",
+                "itemCode": "EC100",
+                "itemDescription": "ELL 45 LR, BW, ASME B16.9",
+                "pipingSpec": "SIS",
+                "skey": "ELBW",
+                "tag": "",
+                "rawAttributes": {
+                    "END-POINT": [
+                        "0.0000    1500.0000    1936.5004    4.0000  BW",
+                        "44.9010    1500.0000    2044.9010    4.0000  BW"
+                    ],
+                    "CENTRE-POINT": "0.0000    1500.0000    2000.0000",
+                    "SKEY": "ELBW",
+                    "ITEM-CODE": "EC100",
+                    "ITEM-DESCRIPTION": "ELL 45 LR, BW, ASME B16.9",
+                    "FABRICATION-ITEM": true,
+                    "ANGLE": "4500",
+                    "PIPING-SPEC": "SIS",
+                    "TRACING-SPEC": true,
+                    "COMPONENT-ATTRIBUTE1": "BOMCOLUMN_Material_",
+                    "COMPONENT-ATTRIBUTE2": "BOMCOLUMN_SCHClass_",
+                    "WEIGHT": "1.9459312346911"
+                }
+            },
+            "engineering": {
+                "angleDegrees": 45,
+                "boreProfile": {
+                    "endPoints": [
+                        4,
+                        4
+                    ],
+                    "branchPoints": [],
+                    "unique": [
+                        4
+                    ]
+                },
+                "connectionTypes": [
+                    "BW"
+                ],
+                "classCode": null,
+                "scheduleHint": null,
+                "pressureClassHint": null,
+                "isReducing": false,
+                "isBranching": false
+            },
+            "geometry": {
+                "endPoints": [
+                    {
+                        "index": 0,
+                        "role": "end-point",
+                        "x": 0,
+                        "y": 1500,
+                        "z": 1936.5004,
+                        "bore": 4,
+                        "connectionType": "BW",
+                        "topology": {
+                            "connectedComponentId": "846",
+                            "connectedEndpoint": 1,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    },
+                    {
+                        "index": 1,
+                        "role": "end-point",
+                        "x": 44.901,
+                        "y": 1500,
+                        "z": 2044.901,
+                        "bore": 4,
+                        "connectionType": "BW",
+                        "topology": {
+                            "connectedComponentId": "889",
+                            "connectedEndpoint": 0,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "centrePoint": {
+                    "x": 0,
+                    "y": 1500,
+                    "z": 2000
+                },
+                "branchPoints": [],
+                "auxiliaryPoints": []
+            },
+            "catalogResolution": {
+                "status": "unresolved",
+                "strategy": "e3d-catalog-resolver",
+                "legacyCandidateSpref": "/SIS/EC100",
+                "resolvedSpref": null,
+                "resolvedBy": null
+            }
+        },
+        {
+            "id": "889",
+            "branchId": "1",
+            "source": {
+                "pcfLine": 890,
+                "pipelineReference": "0001",
+                "type": "PIPE",
+                "itemCode": "PA100",
+                "itemDescription": "PIPE, SEAMLESS, 40, PE, ASTM A106",
+                "pipingSpec": "SIS",
+                "skey": "",
+                "tag": "",
+                "rawAttributes": {
+                    "END-POINT": [
+                        "44.9010    1500.0000    2044.9010    4.0000",
+                        "808.5249    1500.0000    2808.5249    4.0000"
+                    ],
+                    "ITEM-CODE": "PA100",
+                    "ITEM-DESCRIPTION": "PIPE, SEAMLESS, 40, PE, ASTM A106",
+                    "FABRICATION-ITEM": true,
+                    "PIPING-SPEC": "SIS",
+                    "TRACING-SPEC": true,
+                    "COMPONENT-ATTRIBUTE1": "BOMCOLUMN_Material_",
+                    "COMPONENT-ATTRIBUTE2": "BOMCOLUMN_SCHClass_40",
+                    "WEIGHT": "16.0721400707611"
+                }
+            },
+            "engineering": {
+                "angleDegrees": null,
+                "boreProfile": {
+                    "endPoints": [
+                        4,
+                        4
+                    ],
+                    "branchPoints": [],
+                    "unique": [
+                        4
+                    ]
+                },
+                "connectionTypes": [],
+                "classCode": "40",
+                "scheduleHint": "40",
+                "pressureClassHint": null,
+                "isReducing": false,
+                "isBranching": false
+            },
+            "geometry": {
+                "endPoints": [
+                    {
+                        "index": 0,
+                        "role": "end-point",
+                        "x": 44.901,
+                        "y": 1500,
+                        "z": 2044.901,
+                        "bore": 4,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": "866",
+                            "connectedEndpoint": 1,
+                            "extremity": "",
+                            "connectionRole": null,
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    },
+                    {
+                        "index": 1,
+                        "role": "end-point",
+                        "x": 808.5249,
+                        "y": 1500,
+                        "z": 2808.5249,
+                        "bore": 4,
+                        "connectionType": "",
+                        "topology": {
+                            "connectedComponentId": null,
+                            "connectedEndpoint": null,
+                            "extremity": "T",
+                            "connectionRole": "TAIL",
+                            "branchOriginComponentId": null,
+                            "branchOriginPpoint": null
+                        }
+                    }
+                ],
+                "centrePoint": null,
+                "branchPoints": [],
+                "auxiliaryPoints": []
+            },
+            "catalogResolution": {
+                "status": "unresolved",
+                "strategy": "e3d-catalog-resolver",
+                "legacyCandidateSpref": "/SIS/PA100",
+                "resolvedSpref": null,
+                "resolvedBy": null
+            }
+        }
+    ],
+    "branches": [
+        {
+            "id": "1",
+            "componentIds": [
+                "568",
+                "588",
+                "602",
+                "631",
+                "688",
+                "728",
+                "794",
+                "823",
+                "846",
+                "866",
+                "889"
+            ]
+        },
+        {
+            "id": "2",
+            "componentIds": [
+                "548",
+                "516",
+                "496",
+                "315",
+                "284"
+            ]
+        },
+        {
+            "id": "3",
+            "componentIds": [
+                "467",
+                "444",
+                "395",
+                "361",
+                "384"
+            ]
+        },
+        {
+            "id": "4",
+            "componentIds": [
+                "415",
+                "338",
+                "295",
+                "132",
+                "37"
+            ]
+        },
+        {
+            "id": "5",
+            "componentIds": [
+                "57",
+                "78",
+                "98",
+                "121",
+                "164",
+                "187",
+                "207",
+                "230",
+                "250",
+                "264"
+            ]
+        },
+        {
+            "id": "6",
+            "componentIds": [
+                "774",
+                "742",
+                "699",
+                "645",
+                "668"
+            ]
+        }
+    ],
+    "catalogDependencies": [
+        {
+            "sourceSpec": "SIS",
+            "sourceType": "ELBOW",
+            "sourceItemCode": "EA100",
+            "description": "ELL 90 SR, BW, ASME B16.9",
+            "skey": "ELBW",
+            "quantity": 4,
+            "bores": [
+                4
+            ],
+            "connectionTypes": [
+                "BW"
+            ],
+            "anglesDegrees": [
+                90
+            ],
+            "classCodes": [],
+            "sampleComponentIds": [
+                "631",
+                "645",
+                "742",
+                "823"
+            ],
+            "legacyCandidateSpref": "/SIS/EA100",
+            "resolutionStatus": "unresolved"
+        },
+        {
+            "sourceSpec": "SIS",
+            "sourceType": "ELBOW",
+            "sourceItemCode": "EA50",
+            "description": "ELL 90 SR, BW, ASME B16.9",
+            "skey": "ELBW",
+            "quantity": 2,
+            "bores": [
+                2
+            ],
+            "connectionTypes": [
+                "BW"
+            ],
+            "anglesDegrees": [
+                90
+            ],
+            "classCodes": [],
+            "sampleComponentIds": [
+                "132",
+                "338"
+            ],
+            "legacyCandidateSpref": "/SIS/EA50",
+            "resolutionStatus": "unresolved"
+        },
+        {
+            "sourceSpec": "SIS",
+            "sourceType": "ELBOW",
+            "sourceItemCode": "EA65",
+            "description": "ELL 90 SR, BW, ASME B16.9",
+            "skey": "ELBW",
+            "quantity": 1,
+            "bores": [
+                2.5
+            ],
+            "connectionTypes": [
+                "BW"
+            ],
+            "anglesDegrees": [
+                90
+            ],
+            "classCodes": [],
+            "sampleComponentIds": [
+                "361"
+            ],
+            "legacyCandidateSpref": "/SIS/EA65",
+            "resolutionStatus": "unresolved"
+        },
+        {
+            "sourceSpec": "SIS",
+            "sourceType": "ELBOW",
+            "sourceItemCode": "EA80",
+            "description": "ELL 90 SR, BW, ASME B16.9",
+            "skey": "ELBW",
+            "quantity": 1,
+            "bores": [
+                3
+            ],
+            "connectionTypes": [
+                "BW"
+            ],
+            "anglesDegrees": [
+                90
+            ],
+            "classCodes": [],
+            "sampleComponentIds": [
+                "315"
+            ],
+            "legacyCandidateSpref": "/SIS/EA80",
+            "resolutionStatus": "unresolved"
+        },
+        {
+            "sourceSpec": "SIS",
+            "sourceType": "ELBOW",
+            "sourceItemCode": "EB15",
+            "description": "ELL 90, 3000 LB, SW, ASME B16.11",
+            "skey": "ELSW",
+            "quantity": 2,
+            "bores": [
+                0.5
+            ],
+            "connectionTypes": [
+                "SW"
+            ],
+            "anglesDegrees": [
+                90
+            ],
+            "classCodes": [
+                "3000"
+            ],
+            "sampleComponentIds": [
+                "98",
+                "250"
+            ],
+            "legacyCandidateSpref": "/SIS/EB15",
+            "resolutionStatus": "unresolved"
+        },
+        {
+            "sourceSpec": "SIS",
+            "sourceType": "ELBOW",
+            "sourceItemCode": "EC100",
+            "description": "ELL 45 LR, BW, ASME B16.9",
+            "skey": "ELBW",
+            "quantity": 1,
+            "bores": [
+                4
+            ],
+            "connectionTypes": [
+                "BW"
+            ],
+            "anglesDegrees": [
+                45
+            ],
+            "classCodes": [],
+            "sampleComponentIds": [
+                "866"
+            ],
+            "legacyCandidateSpref": "/SIS/EC100",
+            "resolutionStatus": "unresolved"
+        },
+        {
+            "sourceSpec": "SIS",
+            "sourceType": "ELBOW",
+            "sourceItemCode": "EC15",
+            "description": "ELL 45, 3000 LB, SW, ASME B16.11",
+            "skey": "ELSW",
+            "quantity": 2,
+            "bores": [
+                0.5
+            ],
+            "connectionTypes": [
+                "SW"
+            ],
+            "anglesDegrees": [
+                45
+            ],
+            "classCodes": [
+                "3000"
+            ],
+            "sampleComponentIds": [
+                "164",
+                "207"
+            ],
+            "legacyCandidateSpref": "/SIS/EC15",
+            "resolutionStatus": "unresolved"
+        },
+        {
+            "sourceSpec": "SIS",
+            "sourceType": "OLET",
+            "sourceItemCode": "SKL50X15",
+            "description": "SOCKOLET, 3000 LB, BWXSW,  LG, MSS SP-97",
+            "skey": "SKSW",
+            "quantity": 1,
+            "bores": [
+                0.5
+            ],
+            "connectionTypes": [
+                "SW"
+            ],
+            "anglesDegrees": [],
+            "classCodes": [
+                "3000"
+            ],
+            "sampleComponentIds": [
+                "57"
+            ],
+            "legacyCandidateSpref": "/SIS/SKL50X15",
+            "resolutionStatus": "unresolved"
+        },
+        {
+            "sourceSpec": "SIS",
+            "sourceType": "PIPE",
+            "sourceItemCode": "PA100",
+            "description": "PIPE, SEAMLESS, 40, PE, ASTM A106",
+            "skey": "",
+            "quantity": 9,
+            "bores": [
+                4
+            ],
+            "connectionTypes": [],
+            "anglesDegrees": [],
+            "classCodes": [
+                "40"
+            ],
+            "sampleComponentIds": [
+                "568",
+                "602",
+                "668",
+                "688",
+                "699"
+            ],
+            "legacyCandidateSpref": "/SIS/PA100",
+            "resolutionStatus": "unresolved"
+        },
+        {
+            "sourceSpec": "SIS",
+            "sourceType": "PIPE",
+            "sourceItemCode": "PA15",
+            "description": "PIPE, SEAMLESS, 80, PE, ASTM A106",
+            "skey": "",
+            "quantity": 5,
+            "bores": [
+                0.5
+            ],
+            "connectionTypes": [],
+            "anglesDegrees": [],
+            "classCodes": [
+                "80"
+            ],
+            "sampleComponentIds": [
+                "78",
+                "121",
+                "187",
+                "230",
+                "264"
+            ],
+            "legacyCandidateSpref": "/SIS/PA15",
+            "resolutionStatus": "unresolved"
+        },
+        {
+            "sourceSpec": "SIS",
+            "sourceType": "PIPE",
+            "sourceItemCode": "PA50",
+            "description": "PIPE, SEAMLESS, 40, PE, ASTM A106",
+            "skey": "",
+            "quantity": 3,
+            "bores": [
+                2
+            ],
+            "connectionTypes": [],
+            "anglesDegrees": [],
+            "classCodes": [
+                "40"
+            ],
+            "sampleComponentIds": [
+                "37",
+                "295",
+                "415"
+            ],
+            "legacyCandidateSpref": "/SIS/PA50",
+            "resolutionStatus": "unresolved"
+        },
+        {
+            "sourceSpec": "SIS",
+            "sourceType": "PIPE",
+            "sourceItemCode": "PA65",
+            "description": "PIPE, SEAMLESS, 40, PE, ASTM A106",
+            "skey": "",
+            "quantity": 3,
+            "bores": [
+                2.5
+            ],
+            "connectionTypes": [],
+            "anglesDegrees": [],
+            "classCodes": [
+                "40"
+            ],
+            "sampleComponentIds": [
+                "384",
+                "395",
+                "467"
+            ],
+            "legacyCandidateSpref": "/SIS/PA65",
+            "resolutionStatus": "unresolved"
+        },
+        {
+            "sourceSpec": "SIS",
+            "sourceType": "PIPE",
+            "sourceItemCode": "PA80",
+            "description": "PIPE, SEAMLESS, 40, PE, ASTM A106",
+            "skey": "",
+            "quantity": 3,
+            "bores": [
+                3
+            ],
+            "connectionTypes": [],
+            "anglesDegrees": [],
+            "classCodes": [
+                "40"
+            ],
+            "sampleComponentIds": [
+                "284",
+                "496",
+                "548"
+            ],
+            "legacyCandidateSpref": "/SIS/PA80",
+            "resolutionStatus": "unresolved"
+        },
+        {
+            "sourceSpec": "SIS",
+            "sourceType": "TEE",
+            "sourceItemCode": "TE100",
+            "description": "TEE, SCH 40, BW, ASME B16.9",
+            "skey": "TEBW",
+            "quantity": 1,
+            "bores": [
+                4
+            ],
+            "connectionTypes": [
+                "BW"
+            ],
+            "anglesDegrees": [],
+            "classCodes": [
+                "40"
+            ],
+            "sampleComponentIds": [
+                "728"
+            ],
+            "legacyCandidateSpref": "/SIS/TE100",
+            "resolutionStatus": "unresolved"
+        },
+        {
+            "sourceSpec": "SIS",
+            "sourceType": "TEE",
+            "sourceItemCode": "TR100X80",
+            "description": "TEE (RED), SCH 40, BW, ASME B16.9",
+            "skey": "TEBW",
+            "quantity": 1,
+            "bores": [
+                4,
+                3
+            ],
+            "connectionTypes": [
+                "BW"
+            ],
+            "anglesDegrees": [],
+            "classCodes": [
+                "40"
+            ],
+            "sampleComponentIds": [
+                "588"
+            ],
+            "legacyCandidateSpref": "/SIS/TR100X80",
+            "resolutionStatus": "unresolved"
+        },
+        {
+            "sourceSpec": "SIS",
+            "sourceType": "TEE",
+            "sourceItemCode": "TR65X50",
+            "description": "TEE (RED), SCH 40, BW, ASME B16.9",
+            "skey": "TEBW",
+            "quantity": 1,
+            "bores": [
+                2.5,
+                2
+            ],
+            "connectionTypes": [
+                "BW"
+            ],
+            "anglesDegrees": [],
+            "classCodes": [
+                "40"
+            ],
+            "sampleComponentIds": [
+                "444"
+            ],
+            "legacyCandidateSpref": "/SIS/TR65X50",
+            "resolutionStatus": "unresolved"
+        },
+        {
+            "sourceSpec": "SIS",
+            "sourceType": "TEE",
+            "sourceItemCode": "TR80X65",
+            "description": "TEE (RED), SCH 40, BW, ASME B16.9",
+            "skey": "TEBW",
+            "quantity": 1,
+            "bores": [
+                3,
+                2.5
+            ],
+            "connectionTypes": [
+                "BW"
+            ],
+            "anglesDegrees": [],
+            "classCodes": [
+                "40"
+            ],
+            "sampleComponentIds": [
+                "516"
+            ],
+            "legacyCandidateSpref": "/SIS/TR80X65",
+            "resolutionStatus": "unresolved"
+        }
+    ],
+    "diagnostics": {
+        "ignoredEntities": [
+            {
+                "type": "WELD",
+                "pipelineReference": "0001",
+                "count": 40,
+                "samplePcfLines": [
+                    49,
+                    70,
+                    90,
+                    113,
+                    147
+                ],
+                "reason": "Registro de solda preservado apenas no diagnóstico; não gera componente de tubulação."
+            }
+        ]
+    }
+}
